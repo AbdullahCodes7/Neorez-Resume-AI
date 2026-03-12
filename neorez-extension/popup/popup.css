@@ -1,0 +1,222 @@
+body {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 400px;
+  max-width: 700px;
+}
+
+/* .table-wrapper {
+    overflow-y: auto;
+} */
+
+#apptracker__table {
+  /* width: 95%; */
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+
+#apptracker__table td,
+#apptracker__table th {
+  border: 1px solid #ddd;
+}
+
+.apptracker__table-head-row {
+  background-color: hsl(210, 90%, 40%);
+  color: white;
+}
+
+.apptracker__table-head-row th {
+  padding: 8px 2px;
+}
+
+.apptracker__table-body-row td {
+  padding: 8px;
+}
+
+.apptracker__table-body-row tr:nth-child(even) {
+  background-color: hsl(0, 0%, 95%);
+}
+
+footer {
+  position: fixed;
+  bottom: 8px;
+}
+
+footer button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+
+  transition-duration: 0.2s;
+}
+
+#apptracker__clear-button {
+  background-color: hsl(6, 78%, 57%);
+}
+
+#apptracker__clear-button:hover {
+  background-color: hsl(6, 78%, 41%);
+}
+
+#apptracker__clear-button:active {
+  background-color: hsl(6, 78%, 35%);
+}
+
+#apptracker__copy-to-clipboard-button {
+  background-color: hsl(204, 70%, 53%);
+}
+
+#apptracker__copy-to-clipboard-button:hover {
+  background-color: hsl(204, 70%, 39%);
+}
+
+#apptracker__copy-to-clipboard-button:active {
+  background-color: hsl(204, 70%, 30%);
+}
+
+#apptracker__add-current-selected-job-button {
+  background-color: hsl(145, 63%, 49%);
+}
+
+#apptracker__add-current-selected-job-button:hover {
+  background-color: hsl(145, 63%, 36%);
+}
+
+#apptracker__add-current-selected-job-button:active {
+  background-color: hsl(145, 63%, 28%);
+}
+#login-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+#apptracker-container {
+  margin: 0px;
+
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#apptracker-container table,
+thead,
+tbody {
+  border-spacing: 0px !important;
+}
+#apptracker-container thead {
+  background: rgb(145, 145, 145);
+  border-radius: 20px !important;
+}
+
+#apptracker-container thead tr {
+  border-radius: 20px !important;
+}
+#apptracker-container thead tr th {
+  padding: 10px !important;
+  color: white;
+}
+#apptracker-container #apptracker__add-current-selected-job-button {
+  color: #f9fafc;
+  background: #0087ed;
+  border: 1px solid #2a9df4;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#apptracker-container .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#apptracker-container .button-container {
+  display: flex;
+  gap: 10px;
+}
+#apptracker-container .btn-delete {
+  color: #f9fafc;
+  background: red;
+  border: 1px solid red;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#apptracker-container .btn-generate {
+  color: #f9fafc;
+  background: #2a9df4;
+  border: 1px solid #0087ed;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#apptracker-container #logout-button {
+  color: #f9fafc;
+  background: #2a9df4;
+  border: 1px solid #0087ed;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#login-container #login-form {
+  margin: 0px;
+
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#login-container #login-form div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+#login-container #login-form div input {
+  font-size: 12px;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 16px;
+  padding: 10px;
+  border: 1px solid #d0d0d5;
+}
+#login-container #login-form #login-error {
+  width: fit-content;
+  margin: 0px auto;
+}
+#login-container #login-form button {
+  color: #f9fafc;
+  background: #2a9df4;
+  border: 1px solid #0087ed;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#login-container .head {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+#apptracker-container .head {
+  width: fit-content;
+  margin: 0px auto;
+}
+.logodiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

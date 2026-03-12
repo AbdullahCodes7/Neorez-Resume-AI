@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Neorez Job Seeker",
+  "description": "For tracking job applications when applying via Indeed.",
+  "version": "1.7",
+  "icons": {
+    "16": "assets/main.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/main.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:5173/*",
+    "https://neorez-resume.vercel.app/*",
+    "https://www.indeed.com/*",
+    "https://neorez.ai/*",
+    "https://*.indeed.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.indeed.com/*",
+        "https://*.indeed.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

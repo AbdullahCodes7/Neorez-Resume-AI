@@ -1,0 +1,6958 @@
+.ql-bubble .ql-tooltip {
+  z-index: 2;
+}
+.resumeWrap1 {
+  border: 1px solid rgb(209, 194, 194);
+
+  // .borderClick {
+  //     border: 1px solid gray;
+  // }
+
+  //QL EDITOR
+  .ql-editor {
+    padding: 0px;
+    // z-index: 1000;
+  }
+
+  .ql-tooltip-arrow {
+    border-bottom: 6px solid white !important;
+  }
+
+  .ql-toolbar {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 2px 8.2px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    width: 108px;
+    color: #1788df;
+    position: relative;
+    z-index: 9999;
+    opacity: 1;
+  }
+
+  .ql-formats button {
+    box-shadow: none;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.17) !important;
+    }
+  }
+
+  .ql-bubble .ql-stroke {
+    stroke: #0087ed !important;
+  }
+
+  .ql-active .ql-stroke {
+    stroke: #0087ed !important;
+    // background-color: #000000;
+  }
+
+  .ql-stroke:hover {
+    stroke: #0087ed !important;
+  }
+
+  .ql-editor.ql-blank::before {
+    left: 0px;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    // top: 0px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
+
+  //RESUME
+
+  .leftContent {
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .rightContent {
+    padding: 28px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  // All section headings and icons
+  .sections-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    input,
+    h2 {
+      background-color: transparent;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      &::placeholder {
+        font-size: 10px;
+        color: gray;
+        letter-spacing: 0px;
+        font-style: italic;
+      }
+    }
+
+    svg {
+      display: block;
+      color: black;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .resume-image {
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        img {
+          width: 64px;
+          height: 64px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .ql-editor,
+    .ql-editor.ql-blank::before,
+    .resume-profile {
+      // display: flex;
+      // padding: 12px 24px;
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 8px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  //SECTIONS
+
+  .resume-about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .ql-editor,
+    .about-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      /* 108.333% */
+    }
+  }
+
+  .resume-work {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .company-date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .datepicker {
+      .ant-picker-outlined {
+        background: transparent !important;
+        border-color: transparent;
+      }
+
+      .ant-picker-range .ant-picker-active-bar {
+        display: none;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        /* 133.333% */
+      }
+    }
+  }
+
+  .resume-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+
+      .contact-column {
+        display: grid;
+        grid-template-columns: 12px auto;
+        gap: 8px;
+        align-items: center;
+        word-break: break-word;
+      }
+
+      .contact-column-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-education {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .education-content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: Hubot-Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #2e324b;
+        font-family: Hubot-Sans;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .resume-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .ql-editor,
+    .skill-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .resume-language2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .ql-editor,
+    .language-name {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .ant-progress .ant-progress-bg {
+      border-radius: 50px;
+      opacity: 0.5;
+    }
+  }
+
+  .resume-language {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .language-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .language-name {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-reference {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .reference-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .referentName-wrap {
+      .ql-editor,
+      .refernt-name {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .referentInstitute-wrap {
+      .ql-editor,
+      .refernt-institute {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .referentPhone-wrap {
+      .ql-editor,
+      .refernt-phone {
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .referentEmail-wrap {
+      .ql-editor,
+      .refernt-email {
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .info-heading {
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-communication {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .ql-editor,
+    .communication-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 13px;
+    }
+  }
+
+  .resume-leadership {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .ql-editor,
+    .leadership-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 13px;
+    }
+  }
+
+  .resume-follow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .follow-subheading {
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 15px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "o";
+        left: -15px;
+      }
+    }
+
+    .ql-editor,
+    .follow-details {
+      color: #4d4a4b;
+      font-family: "Roboto", "Inter";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+// .resumeTemp1,
+// .resumeTemp2,
+// .resumeTemp4,
+// .resumeTemp5,
+.resumeTemplate14 {
+  .resume-skills-progress,
+  .resume-interest,
+  .resume-follow {
+    display: none;
+  }
+}
+
+.resumeTemp1 .resumeTemplate6,
+.resumeTemplate7,
+.resumeTemplate9,
+.resumeTemplat11,
+.resumeTemplate18 {
+  .resume-reference {
+    display: none;
+  }
+}
+
+//RESUME 1
+.resumeTemp1 {
+  padding-block: 30px;
+
+  .leftContent {
+    background-color: #00000010;
+  }
+
+  .resume-interest {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .interest {
+      border-radius: 7px;
+      border: 1px solid #403f3d;
+      color: #403f3d;
+      font-family: Hubot-Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      padding: 6px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  //seperate section lines
+  .sepeerateSection {
+    width: 100%;
+    height: 2px;
+    background: gray;
+  }
+
+  .seperateStart {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background: gray;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: gray;
+      letter-spacing: 5px;
+      font-family: Cabin;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    .resume-image {
+      width: 0%;
+
+      .image {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .resume-profile {
+      width: 100%;
+      padding: 12px 24px;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: gray;
+          font-family: Cabin;
+          letter-spacing: 5px;
+          font-size: 36px;
+          font-weight: 600;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: gray;
+          font-family: Cabin;
+          letter-spacing: 3px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+
+      svg {
+        color: gray;
+      }
+
+      .contact-column {
+        display: grid;
+        grid-template-columns: 17px auto;
+        word-break: break-word;
+
+        .ql-editor,
+        .contact-details {
+          color: black;
+          font-family: Cabin;
+        }
+      }
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #2e324b;
+      font-family: Cabin;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-family: Cabin;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #000;
+        font-family: Cabin;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #2e324b;
+        font-family: Cabin;
+      }
+    }
+
+    .date-seperator {
+      color: #2e324b;
+    }
+
+    .resume-date-picker {
+      color: #2e324b;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: Cabin;
+      }
+    }
+  }
+
+  // .resume-certification {
+  //   display: none;
+  // }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: Cabin;
+    }
+  }
+
+  .resume-language2 {
+    .ql-editor,
+    .language-name {
+      color: #000;
+      font-family: Cabin;
+    }
+
+    .ant-progress .ant-progress-bg {
+      background: gray;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: Cabin;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: Cabin;
+        }
+      }
+
+      .resume-date-picker {
+        color: #2e324b;
+        font-family: Cabin;
+        font-weight: 400;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  // .resume-language {
+  //   display: none;
+  // }
+
+  .resume-reference {
+    display: none;
+  }
+}
+
+//RESUME TEMPLATE 2
+.resumeTemp2 {
+  padding-bottom: 35px;
+
+  .leftContent {
+    width: 40%;
+  }
+
+  .rightContent {
+    width: 60%;
+  }
+
+  //seperate section lines
+  .sepeerateSection {
+    width: 100%;
+    height: 2px;
+    background-color: #e5d3c3;
+  }
+
+  .seperateContent {
+    width: 1px;
+    background-color: #e5d3c3;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #404040;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      padding-inline: 4px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    .resume-image {
+      width: 0%;
+
+      .image {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .resume-profile {
+      background-color: #e5d3c3;
+      padding: 40px 30px;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #404040;
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          letter-spacing: 5px;
+          font-size: 45px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #404040;
+          font-family: "Arial", "Helvetica", sans-serif;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+
+  .resume-reference {
+    display: none;
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: black;
+      font-family: "Arial", "Helvetica", sans-serif;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #2e324b;
+      font-family: "Arial", "Helvetica", sans-serif;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-family: "Arial", "Helvetica", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #000;
+        font-family: "Arial", "Helvetica", sans-serif;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #2e324b;
+        font-family: "Arial", "Helvetica", sans-serif;
+      }
+    }
+
+    .resume-date-picker {
+      color: #2e324b;
+      font-family: Cabin;
+      font-weight: 400;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: "Arial", "Helvetica", sans-serif;
+      }
+    }
+  }
+
+  // .resume-certification {
+  //   display: none;
+  // }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: "Arial", "Helvetica", sans-serif;
+    }
+  }
+
+  .resume-language2 {
+    .ql-editor,
+    .language-name {
+      color: #000;
+      font-family: "Arial", "Helvetica", sans-serif;
+    }
+
+    .ant-progress .ant-progress-bg {
+      background: gray;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: "Arial", "Helvetica", sans-serif;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: "Arial", "Helvetica", sans-serif;
+          font-weight: 400;
+          font-size: 10px;
+        }
+      }
+
+      .resume-date-picker {
+        font-family: "Arial", "Helvetica", sans-serif;
+        font-weight: 400;
+
+        .ant-picker-input > input {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  // .resume-language {
+  //   display: none;
+  // }
+}
+
+// RESUME TEMPLATE 3
+.resumeTemp3 {
+  // padding-bottom: 35px;
+
+  .leftContent {
+    width: 40%;
+    order: 1;
+    background-color: #e9f5fe;
+  }
+
+  .rightContent {
+    width: 60%;
+  }
+
+  //seperate section lines
+  .sepeerateSection {
+    width: 70%;
+    height: 1px;
+    background-color: #043d68;
+  }
+
+  .sepeerateSectionProfile {
+    width: 100%;
+    height: 1px;
+    background-color: #043d68;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #043d68;
+      font-family: "Century Gothic", "Arial", sans-serif;
+      padding-inline: 4px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .resume-image {
+      width: 40%;
+      // background-color: #e9f5fe;
+      height: auto;
+
+      .image {
+        width: 40%;
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .resume-profile {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px 30px 0px 30px;
+      width: 60%;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #043d68;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 26px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #043d68;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: #043d68;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+
+    svg {
+      display: none;
+    }
+
+    .contact-column {
+      grid-template-columns: auto;
+      word-break: break-word;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #043d68;
+
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #043d68;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #043d68;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #043d68;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .date {
+      color: #043d68;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #043d68;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+  }
+
+  // .resume-certification {
+  //   display: none;
+  // }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: #043d68;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+  }
+
+  .resume-follow {
+    display: none;
+  }
+
+  // .resume-language {
+  //   display: none;
+  // }
+
+  .resume-reference {
+    display: none;
+  }
+
+  .resume-language2 {
+    .ql-editor,
+    .language-name {
+      color: #043d68;
+
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+
+    .ant-progress .ant-progress-bg {
+      background: gray;
+    }
+  }
+
+  .resume-education {
+    .degree-wrap {
+      .ql-editor,
+      .degree {
+        color: #043d68;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .college-wrap {
+      .ql-editor,
+      .college {
+        color: #043d68;
+
+        font-family: "Century Gothic", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+      }
+    }
+
+    .resume-date-picker {
+      color: #043d68;
+      font-family: "Century Gothic", "Arial", sans-serif;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+//RESUME TEMPLATE 4
+// .resumeTemp4 {
+//   .leftContent {
+//     padding: 28px;
+//     background-color: #003953;
+
+//     .seperateHeading {
+//       width: 100%;
+//       height: 2px;
+//       background: white;
+//     }
+//   }
+
+//   .rightContent {
+//     .seperateHeading {
+//       width: 100%;
+//       height: 2px;
+//       background: #003953;
+//     }
+//   }
+
+//   //section titles
+//   .sections-title {
+//     input,
+//     h2 {
+//       color: white;
+//       letter-spacing: 3px;
+//       font-family: Cabin;
+//       padding-inline: 4px;
+//     }
+
+//     svg {
+//       display: none;
+//     }
+//   }
+
+//   .certification-class {
+//     input,
+//     h2 {
+//       color: #003953;
+//     }
+//   }
+//   .profile-content {
+//     display: flex;
+//     width: 100%;
+
+//     .resume-image {
+//       padding: 28px;
+//       width: 40%;
+//       background-color: #003953;
+//       display: flex;
+//       justify-content: center;
+
+//       .image {
+//         width: 110px;
+//         height: 110px;
+//         background-color: white;
+
+//         img {
+//           width: 100px;
+//           height: 100px;
+//         }
+//       }
+//     }
+
+//     .resume-profile {
+//       order: 1;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       padding: 40px 30px 0px 30px;
+//       width: 60%;
+
+//       .image {
+//         display: none;
+//       }
+
+//       .name-wrap {
+//         .ql-editor,
+//         .name {
+//           color: #535353;
+//           font-family: "Century Gothic", "Arial", sans-serif;
+//           font-size: 45px;
+//         }
+//       }
+
+//       .designation-wrap {
+//         .ql-editor,
+//         .designation {
+//           color: #535353;
+//           font-family: "Century Gothic", "Arial", sans-serif;
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//   }
+
+//   .resume-contact {
+//     .contact-content {
+//       gap: 12px;
+
+//       .contact-column {
+//         display: grid;
+//         grid-template-columns: 14px auto;
+//         word-break: break-word;
+//       }
+//     }
+
+//     .ql-editor,
+//     .contact-details {
+//       color: white;
+//       font-family: Cabin;
+//     }
+
+//     svg {
+//       color: white;
+//     }
+//   }
+
+//   .resume-about {
+//     .sections-title {
+//       input,
+//       h2 {
+//         color: #003953;
+//       }
+//     }
+
+//     .ql-editor,
+//     .about-content {
+//       color: #2e324b;
+//       font-family: Cabin;
+//     }
+//   }
+
+//   .resume-work {
+//     .sections-title {
+//       input,
+//       h2 {
+//         color: #003953;
+//       }
+//     }
+
+//     .job-wrap {
+//       .ql-editor,
+//       .job {
+//         color: #535353;
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .company-wrap {
+//       .ql-editor,
+//       .company {
+//         color: #535353;
+//         font-family: Cabin;
+//         font-weight: 400;
+//       }
+//     }
+
+//     .location-wrap {
+//       .ql-editor,
+//       .location {
+//         color: #2e324b;
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .resume-date-picker {
+//       color: #2e324b;
+//       font-family: Cabin;
+
+//       .ant-picker-input > input {
+//         font-size: 10px;
+//       }
+//     }
+
+//     .description-wrap {
+//       .ql-editor,
+//       .description {
+//         color: #000;
+//         font-family: Cabin;
+//       }
+//     }
+//   }
+
+//   // .resume-certification {
+//   //   display: none;
+//   // }
+
+//   .resume-skills {
+//     .ql-editor,
+//     .skill-content {
+//       color: white;
+//       font-family: Cabin;
+//     }
+//   }
+
+//   .resume-language2 {
+//     display: none;
+//   }
+
+//   .resume-language {
+//     .language-content {
+//       .ql-editor,
+//       .language-name {
+//         font-family: Cabin;
+//         color: white;
+//       }
+//     }
+//   }
+
+//   .resume-education {
+//     .education-content {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       gap: 8px;
+
+//       .degree-wrap {
+//         .ql-editor,
+//         .degree {
+//           color: #fff;
+//           font-family: Cabin;
+//         }
+//       }
+
+//       .college-wrap {
+//         .ql-editor,
+//         .college {
+//           color: #fff;
+//           font-family: Cabin;
+//           text-transform: uppercase;
+//           font-size: 12px;
+//         }
+//       }
+
+//       .date-seperator {
+//         color: white;
+//       }
+
+//       .resume-date-picker {
+//         color: #fff;
+//         font-family: Cabin;
+//         font-weight: 600;
+
+//         .ant-picker-input > input {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+
+//   .resume-reference {
+//     .sections-title {
+//       input,
+//       h2 {
+//         color: #003953;
+//       }
+//     }
+
+//     .referentName-wrap {
+//       .ql-editor,
+//       .refernt-name {
+//         font-weight: 700;
+//         font-family: Cabin;
+//         color: #535353;
+//       }
+//     }
+
+//     .referentInstitute-wrap {
+//       .ql-editor,
+//       .refernt-institute {
+//         font-weight: 500;
+//         font-family: Cabin;
+//         color: #535353;
+//       }
+//     }
+
+//     .referentPhone-wrap {
+//       .ql-editor,
+//       .refernt-phone {
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .referentEmail-wrap {
+//       .ql-editor,
+//       .refernt-email {
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .info-heading {
+//       font-family: Cabin;
+//     }
+//   }
+// }
+
+.resumeTemp4 {
+  .leftContent {
+    padding: 20px;
+    background-color: #003953;
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: white;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-skills {
+      .ql-editor,
+      .skill-content {
+        color: white;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-contact {
+      .contact-content {
+        gap: 12px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: white;
+        font-family: Cabin;
+      }
+
+      svg {
+        color: white;
+      }
+    }
+
+    .date-wrap {
+      .ant-picker {
+        .ant-picker-input {
+          color: white;
+        }
+      }
+    }
+
+    .seperateHeading {
+      width: 100%;
+      height: 2px;
+      background: white;
+    }
+  }
+
+  .rightContent {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #535353;
+        font-family: Cabin;
+      }
+    }
+
+    .date-wrap {
+      .ant-picker {
+        .ant-picker-input {
+          color: black;
+        }
+      }
+    }
+    .resume-skills {
+      .ql-editor,
+      .skill-content {
+        color: black;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-contact {
+      .contact-content {
+        gap: 12px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: white;
+        font-family: Cabin;
+      }
+
+      svg {
+        color: black;
+      }
+    }
+
+    .seperateHeading {
+      width: 100%;
+      height: 2px;
+      background: #003953;
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: white;
+      letter-spacing: 3px;
+      font-family: Cabin;
+      padding-inline: 4px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .certification-class {
+    input,
+    h2 {
+      color: #003953;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .resume-image {
+      padding: 28px;
+      width: 40%;
+      background-color: #003953;
+      display: flex;
+      justify-content: center;
+
+      .image {
+        width: 110px;
+        height: 110px;
+        background-color: white;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .resume-profile {
+      order: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 40px 30px 0px 30px;
+      width: 60%;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #535353;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 45px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #535353;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: rgb(0, 0, 0);
+        font-family: Cabin;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        font-family: Cabin;
+        color: white;
+        font-family: white;
+        font-size: 10px;
+      }
+    }
+  }
+  .resume-about {
+    .sections-title {
+      input,
+      h2 {
+        color: #003953;
+      }
+    }
+
+    .ql-editor,
+    .about-content {
+      color: #2e324b;
+      font-family: Cabin;
+    }
+  }
+
+  .resume-work {
+    .sections-title {
+      input,
+      h2 {
+        color: #003953;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #535353;
+        font-family: Cabin;
+        font-weight: 400;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #2e324b;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-date-picker {
+      color: #2e324b;
+      font-family: Cabin;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: Cabin;
+      }
+    }
+  }
+
+  // .resume-certification {
+  //   display: none;
+  // }
+
+  .resume-language2 {
+    display: none;
+  }
+
+  .resume-language {
+    .language-content {
+      .ql-editor,
+      .language-name {
+        font-family: Cabin;
+        color: white;
+      }
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 8px;
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #fff;
+          font-family: Cabin;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #fff;
+          font-family: Cabin;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+
+      .date-seperator {
+        color: white;
+      }
+
+      .resume-date-picker {
+        color: #fff;
+        font-family: Cabin;
+        font-weight: 600;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-reference {
+    .sections-title {
+      input,
+      h2 {
+        color: #003953;
+      }
+    }
+
+    .referentName-wrap {
+      .ql-editor,
+      .refernt-name {
+        font-weight: 700;
+        font-family: Cabin;
+        color: #535353;
+      }
+    }
+
+    .referentInstitute-wrap {
+      .ql-editor,
+      .refernt-institute {
+        font-weight: 500;
+        font-family: Cabin;
+        color: #535353;
+      }
+    }
+
+    .referentPhone-wrap {
+      .ql-editor,
+      .refernt-phone {
+        font-family: Cabin;
+      }
+    }
+
+    .referentEmail-wrap {
+      .ql-editor,
+      .refernt-email {
+        font-family: Cabin;
+      }
+    }
+
+    .info-heading {
+      font-family: Cabin;
+    }
+  }
+}
+
+//RESUME TEMPLATE 5
+// .resumeTemp5 {
+//   .leftContent {
+//     padding: 28px;
+//     background-color: #08555e;
+//   }
+
+//   //section titles
+//   .sections-title {
+
+//     input,
+//     h2 {
+//       color: white;
+//       font-family: Cabin;
+//       padding-inline: 4px;
+//     }
+
+//     svg {
+//       display: none;
+//     }
+//   }
+
+//   .profile-content {
+//     display: flex;
+//     width: 100%;
+
+//     .resume-image {
+//       padding: 28px;
+//       width: 40%;
+//       background-color: #08555e;
+
+//       display: flex;
+//       justify-content: center;
+
+//       .image {
+//         width: 110px;
+//         height: 110px;
+//         background-color: white;
+
+//         img {
+//           width: 100px;
+//           height: 100px;
+//         }
+//       }
+//     }
+
+//     .resume-profile {
+//       order: 1;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       padding: 40px 30px 0px 30px;
+//       width: 60%;
+
+//       .image {
+//         display: none;
+//       }
+
+//       .name-wrap {
+
+//         .ql-editor,
+//         .name {
+//           color: #404041;
+//           font-family: "Century Gothic", "Arial", sans-serif;
+//           font-size: 45px;
+//         }
+//       }
+
+//       .designation-wrap {
+
+//         .ql-editor,
+//         .designation {
+//           color: #404041;
+//           font-family: "Century Gothic", "Arial", sans-serif;
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//   }
+
+//   .resume-contact {
+//     .contact-content {
+//       gap: 12px;
+
+//       .contact-column {
+//         display: grid;
+//         grid-template-columns: 14px auto;
+//         word-break: break-word;
+//       }
+//     }
+
+//     .ql-editor,
+//     .contact-details {
+//       color: white;
+//       font-family: Cabin;
+//     }
+
+//     svg {
+//       color: white;
+//     }
+//   }
+
+//   .resume-about {
+//     .sections-title {
+
+//       input,
+//       h2 {
+//         color: #404041;
+//       }
+//     }
+
+//     .about-content {
+//       color: #404041;
+//       font-family: Cabin;
+//     }
+//   }
+
+//   .resume-work {
+//     .sections-title {
+
+//       input,
+//       h2 {
+//         color: #404041;
+//       }
+//     }
+
+//     .job-wrap {
+
+//       .ql-editor,
+//       .job {
+//         color: #535353;
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .company-wrap {
+
+//       .ql-editor,
+//       .company {
+//         color: #535353;
+//         font-family: Cabin;
+//         font-weight: 400;
+//       }
+//     }
+
+//     .location-wrap {
+
+//       .ql-editor,
+//       .location {
+//         color: #2e324b;
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .resume-date-picker {
+//       color: #2e324b;
+//       font-family: Cabin;
+
+//       .ant-picker-input>input {
+//         font-size: 12px;
+//       }
+//     }
+
+//     .description-wrap {
+
+//       .ql-editor,
+//       .description {
+//         color: #000;
+//         font-family: Cabin;
+//       }
+//     }
+//   }
+
+//   .resume-certification {
+//     .title-wrap {
+
+//       .ql-editor,
+//       .title {
+//         color: white;
+//         font-family: Cabin;
+//         font-weight: 600;
+//         font-size: 12px;
+//       }
+//     }
+
+//     .date-wrap {
+
+//       .ql-editor,
+//       .date {
+//         font-family: Cabin;
+//         color: white;
+//         font-family: white;
+//         font-size: 10px;
+//       }
+//     }
+//   }
+
+//   .resume-skills {
+
+//     .ql-editor,
+//     .skill-content {
+//       color: white;
+//       font-family: Cabin;
+//     }
+//   }
+
+//   .resume-language2 {
+//     display: none;
+//   }
+
+//   // .resume-language {
+//   //   display: none;
+//   // }
+
+//   .resume-education {
+//     .education-content {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       gap: 8px;
+
+//       .degree-wrap {
+
+//         .ql-editor,
+//         .degree {
+//           color: #fff;
+//           font-family: Cabin;
+//         }
+//       }
+
+//       .college-wrap {
+
+//         .ql-editor,
+//         .college {
+//           color: #fff;
+//           font-family: Cabin;
+//           text-transform: uppercase;
+//           font-size: 12px;
+//         }
+//       }
+
+//       .date-seperator {
+//         color: white;
+//       }
+
+//       .resume-date-picker {
+//         color: #fff;
+//         font-family: Cabin;
+//         font-weight: 600;
+
+//         .ant-picker-input>input {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+
+//   .resume-reference {
+//     .sections-title {
+
+//       input,
+//       h2 {
+//         color: #404041;
+//       }
+//     }
+
+//     .referentName-wrap {
+
+//       .ql-editor,
+//       .refernt-name {
+//         font-weight: 600;
+//         font-family: Cabin;
+//         color: #535353;
+//       }
+//     }
+
+//     .referentInstitute-wrap {
+
+//       .ql-editor,
+//       .refernt-institute {
+//         font-weight: 500;
+//         font-family: Cabin;
+//         color: #535353;
+//       }
+//     }
+
+//     .referentPhone-wrap {
+
+//       .ql-editor,
+//       .refernt-phone {
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .referentEmail-wrap {
+
+//       .ql-editor,
+//       .refernt-email {
+//         font-family: Cabin;
+//       }
+//     }
+
+//     .info-heading {
+//       font-family: Cabin;
+//     }
+//   }
+// }
+
+.resumeTemp5 {
+  .leftContent {
+    padding: 20px;
+    background-color: #08555e;
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: white;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-skills {
+      .ql-editor,
+      .skill-content {
+        color: white;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-contact {
+      .contact-content {
+        gap: 12px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: white;
+        font-family: Cabin;
+      }
+
+      svg {
+        color: white;
+      }
+    }
+
+    .date-wrap {
+      .ant-picker {
+        .ant-picker-input {
+          color: white;
+        }
+      }
+    }
+
+    .seperateHeading {
+      width: 100%;
+      height: 2px;
+      background: white;
+    }
+  }
+
+  .rightContent {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #ffffff;
+        font-family: Cabin;
+      }
+    }
+
+    .date-wrap {
+      .ant-picker {
+        .ant-picker-input {
+          color: black;
+        }
+      }
+    }
+    .resume-skills {
+      .ql-editor,
+      .skill-content {
+        color: black;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-contact {
+      .contact-content {
+        gap: 12px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: white;
+        font-family: Cabin;
+      }
+
+      svg {
+        color: black;
+      }
+    }
+
+    .seperateHeading {
+      width: 100%;
+      height: 2px;
+      background: #003953;
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: white;
+      font-family: Cabin;
+      padding-inline: 4px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .resume-image {
+      padding: 28px;
+      width: 40%;
+      background-color: #08555e;
+
+      display: flex;
+      justify-content: center;
+
+      .image {
+        width: 110px;
+        height: 110px;
+        background-color: white;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .resume-profile {
+      order: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 40px 30px 0px 30px;
+      width: 60%;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #404041;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 45px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #404041;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+
+      .contact-column {
+        display: grid;
+        grid-template-columns: 14px auto;
+        word-break: break-word;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: white;
+      font-family: Cabin;
+    }
+
+    svg {
+      color: white;
+    }
+  }
+
+  .resume-about {
+    .sections-title {
+      input,
+      h2 {
+        color: #404041;
+      }
+    }
+
+    .about-content {
+      color: #404041;
+      font-family: Cabin;
+    }
+  }
+
+  .resume-work {
+    .sections-title {
+      input,
+      h2 {
+        color: #404041;
+      }
+    }
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #535353;
+        font-family: Cabin;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #535353;
+        font-family: Cabin;
+        font-weight: 400;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #2e324b;
+        font-family: Cabin;
+      }
+    }
+
+    .resume-date-picker {
+      color: #2e324b;
+      font-family: Cabin;
+
+      .ant-picker-input > input {
+        font-size: 12px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: Cabin;
+      }
+    }
+  }
+
+  .resume-certification {
+    .sections-title {
+      input,
+      h2 {
+        color: #404041;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        font-family: Cabin;
+        color: white;
+        font-family: white;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: white;
+      font-family: Cabin;
+    }
+  }
+
+  .resume-language2 {
+    display: none;
+  }
+
+  // .resume-language {
+  //   display: none;
+  // }
+
+  .resume-education {
+    .education-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 8px;
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #fff;
+          font-family: Cabin;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #fff;
+          font-family: Cabin;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+
+      .date-seperator {
+        color: white;
+      }
+
+      .resume-date-picker {
+        color: #fff;
+        font-family: Cabin;
+        font-weight: 600;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-reference {
+    .sections-title {
+      input,
+      h2 {
+        color: #404041;
+      }
+    }
+
+    .referentName-wrap {
+      .ql-editor,
+      .refernt-name {
+        font-weight: 600;
+        font-family: Cabin;
+        color: #535353;
+      }
+    }
+
+    .referentInstitute-wrap {
+      .ql-editor,
+      .refernt-institute {
+        font-weight: 500;
+        font-family: Cabin;
+        color: #535353;
+      }
+    }
+
+    .referentPhone-wrap {
+      .ql-editor,
+      .refernt-phone {
+        font-family: Cabin;
+      }
+    }
+
+    .referentEmail-wrap {
+      .ql-editor,
+      .refernt-email {
+        font-family: Cabin;
+      }
+    }
+
+    .info-heading {
+      font-family: Cabin;
+    }
+  }
+}
+
+//RESUME TEMPLATE 6
+.resumeTemplate6 {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .resume-leadership,
+  .resume-communication,
+  .resume-activities {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    .leftColumn {
+      width: 50%;
+    }
+
+    .rightColumn {
+      width: 50%;
+    }
+  }
+
+  .seperateHeading {
+    width: 100%;
+    height: 2px;
+    background-color: #949494;
+  }
+
+  .section-seperate {
+    width: 1px;
+    height: 100%;
+    background-color: #949494;
+  }
+
+  .headerWrap {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+    padding: 28px 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      left: 0px;
+      height: 4px;
+      background-color: #535353;
+    }
+  }
+
+  .resume-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+
+    .seperateHeading {
+      width: 100%;
+      height: 4px;
+      margin-block: 4px;
+      background-color: #949494;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .name-wrap {
+      .ql-editor,
+      .name {
+        color: #535353;
+        font-family: "Lora", serif;
+        font-size: 36px;
+      }
+    }
+
+    .designation-wrap {
+      .ql-editor,
+      .designation {
+        color: #535353;
+        font-size: 16px;
+        font-family: "Lora", serif;
+      }
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #535353;
+      font-family: "Lora", serif;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-contact {
+    .sections-title {
+      display: none;
+    }
+
+    .seperateHeading {
+      display: none;
+    }
+
+    .contact-content {
+      gap: 12px;
+
+      .contact-column {
+        display: grid;
+        grid-template-columns: 14px auto;
+        word-break: break-word;
+      }
+    }
+
+    .contact-details {
+      color: #535353;
+      font-family: "Lora", serif;
+      font-size: 13px;
+    }
+
+    svg {
+      color: #535353;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      width: 80%;
+      margin: auto;
+      color: #535353;
+      font-family: "Lora", serif;
+      font-size: 13px;
+    }
+
+    .seperateHeading {
+      width: 50%;
+      margin: auto;
+      height: 2px;
+      background-color: #949494;
+    }
+
+    .sections-title {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #535353;
+        font-family: "Lora", serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #535353;
+        font-family: "Lora", serif;
+      }
+    }
+
+    .ql-editor {
+      .ql-editor,
+      .location {
+        color: #535353;
+        font-family: "Lora", serif;
+      }
+    }
+
+    .date {
+      color: #535353;
+      font-family: "Lora", serif;
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #535353;
+        font-family: "Lora", serif;
+      }
+    }
+  }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: #535353;
+      font-family: "Lora", serif;
+    }
+  }
+
+  .resume-language2 {
+    .language-name {
+      color: #535353;
+      font-family: "Lora", serif;
+    }
+
+    .ant-progress .ant-progress-bg {
+      background: gray;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #535353;
+          font-family: "Lora", serif;
+          margin-bottom: 0px;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #535353;
+          font-family: "Lora", serif;
+          margin-bottom: 0px;
+        }
+      }
+
+      .date {
+        color: #535353;
+        font-family: "Lora", serif;
+      }
+    }
+  }
+
+  // .resume-language {
+  //   display: none;
+  // }
+
+  .resume-reference {
+    display: none;
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #535353;
+        font-family: "Lora", serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #535353;
+        font-family: "Lora", serif;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+//RESUME TEMPLATE 7
+.resumeTemplate7 {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: rgb(166, 166, 166);
+      font-family: "R11 JSF", sans-serif;
+      letter-spacing: 2px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-leadership,
+  .resume-communication {
+    display: none;
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 32px;
+
+    .resume-profile {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #000;
+          font-weight: 600;
+          font-family: "R44 JSF", sans-serif;
+          font-size: 36px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          text-wrap: nowrap;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #000000;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 600;
+          text-wrap: nowrap;
+          letter-spacing: 2px;
+          font-family: "R11 JSF", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .resume-contact {
+      .sections-title {
+        display: none;
+      }
+
+      .seperateHeading {
+        display: none;
+      }
+
+      .contact-content {
+        display: flex;
+        // flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .contact-details {
+        color: #000000;
+        font-family: "R44 JSF", sans-serif;
+        font-size: 10px;
+        text-wrap: nowrap;
+      }
+
+      .iconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: #737373;
+
+        svg {
+          color: #d9d9d9;
+        }
+      }
+    }
+  }
+
+  .sectionWithLine {
+    display: grid;
+    grid-template-columns: 10px auto;
+
+    .line {
+      width: 6px;
+      background-color: #d9d9d9;
+    }
+  }
+
+  .seperateHeading {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 28px;
+  }
+
+  .resume-about {
+    // padding: 0px 28px;
+
+    .ql-editor,
+    .about-content {
+      color: #737373;
+      font-family: "R44 JSF", sans-serif;
+      font-size: 13px;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-family: "R44 JSF", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #737373;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: "R44 JSF", sans-serif;
+      }
+    }
+
+    .company-date {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: center;
+
+      .work-date {
+        position: relative;
+
+        &::before {
+          content: ".";
+          font-size: 20px;
+          font-weight: 600;
+          position: absolute;
+          left: -6px;
+          bottom: 3px;
+          color: #737373;
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #737373;
+        font-family: "R44 JSF", sans-serif;
+        font-style: italic;
+      }
+    }
+  }
+
+  .resume-skills {
+    .sectionWithLine .line {
+      height: 24px;
+    }
+
+    .skill-type {
+      display: flex;
+      gap: 30px;
+      list-style: disc;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #737373;
+      font-family: "R44 JSF", sans-serif;
+      margin-left: 12px;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "R44 JSF", sans-serif;
+          margin-bottom: 0px;
+        }
+      }
+
+      .degree-date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        .college-wrap {
+          .ql-editor,
+          .college {
+            color: #737373;
+            font-family: "R44 JSF", sans-serif;
+            margin-bottom: 0px;
+            font-size: 11px;
+            font-weight: normal;
+          }
+        }
+
+        .education-date {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          &::before {
+            content: ".";
+            font-size: 20px;
+            font-weight: 600;
+            position: absolute;
+            left: -6px;
+            bottom: 3px;
+            color: #737373;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: "R44 JSF", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #737373;
+        font-family: "R44 JSF", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-activities {
+    display: none;
+  }
+}
+
+//RESUME TEMPLATE 8
+.resumeTemplate8 {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .seperate-horizantal {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 12px;
+  }
+
+  .resume-leadership,
+  .resume-communication {
+    display: none;
+  }
+
+  .leftColumn {
+    .edu-projct {
+      display: flex;
+      gap: 20px;
+      padding-block: 10px;
+
+      .seperate-vertical {
+        width: 1px;
+        background-color: black;
+      }
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #000;
+      font-family: "Arial", sans-serif;
+      letter-spacing: 2px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  //Line after Section
+  .sectionWithLine {
+    .line {
+      display: none;
+    }
+  }
+
+  //Line after Headings
+  .seperateHeading {
+    display: none;
+  }
+
+  //left and right area content
+  .sectionsColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .resume-profile {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .image {
+        display: none;
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #000;
+          font-family: "Arial", sans-serif;
+          font-size: 36px;
+          font-weight: 600;
+          text-wrap: nowrap;
+        }
+      }
+
+      .designation-wrap {
+        display: none;
+      }
+    }
+
+    .resume-contact {
+      .sections-title {
+        display: none;
+      }
+
+      .contact-column-wrap {
+        flex-direction: row;
+      }
+
+      .contact-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 50%;
+        flex-wrap: wrap;
+        gap: 3px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .contact-details {
+        color: #000;
+        font-family: "Arial", sans-serif;
+        font-size: 12px;
+        text-wrap: nowrap;
+      }
+
+      .iconContainer {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #000;
+      font-family: "Arial", sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-family: "Arial", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #000;
+        font-family: "Arial", sans-serif;
+      }
+    }
+
+    .resume-date-picker {
+      color: #000;
+      font-family: "Arial", sans-serif;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+        font-weight: 700;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: "Arial", sans-serif;
+      }
+    }
+  }
+
+  .resume-skills {
+    .sectionWithLine .line {
+      height: 24px;
+    }
+
+    .skill-type {
+      display: flex;
+      gap: 30px;
+      list-style: disc;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: "Arial", sans-serif;
+      margin-left: 12px;
+    }
+  }
+
+  .resume-education {
+    .edu-projct {
+      display: flex;
+      gap: 20px;
+
+      .seperate-vertical {
+        width: 1px;
+        background-color: black;
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: "Arial", sans-serif;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: "Arial", sans-serif;
+          font-weight: 600;
+        }
+      }
+
+      .date {
+        color: #000;
+        font-family: "Arial", sans-serif;
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: "Arial", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #000;
+        font-family: "Arial", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-activities {
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .name-wrap {
+        .ql-editor,
+        .project-name {
+          color: #000;
+          font-family: "Arial", sans-serif;
+          font-weight: 600;
+          margin-bottom: 0px;
+          font-size: 13px;
+        }
+      }
+
+      .description-wrap {
+        .ql-editor,
+        .project-description {
+          color: #000;
+          font-family: "Arial", sans-serif;
+          font-size: 11px;
+          list-style-type: none;
+        }
+      }
+    }
+
+    .project-date {
+      display: none;
+    }
+  }
+}
+
+//RESUME TEMPLATE 9
+.resumeTemplate9 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 28px;
+
+  .seperate-horizantal {
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    background-color: black;
+  }
+
+  //section titles
+  .sections-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    input,
+    h2 {
+      color: #404040;
+      font-family: Verdana, Geneva, sans-serif;
+      font-weight: 400;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .seperateHeading,
+  .resume-leadership,
+  .resume-communication,
+  .resume-activities {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 30px;
+
+    .leftColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .seperate-horizantal {
+      width: 100%;
+    }
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .resume-profile {
+      background-color: #262626;
+      padding-inline: 30px;
+
+      .name-designation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 30px;
+        gap: 30px;
+
+        .name-wrap {
+          .ql-editor,
+          .name {
+            color: #fff !important;
+            font-family: Verdana, Geneva, sans-serif;
+            letter-spacing: 3px;
+            font-size: 36px;
+            font-weight: 400;
+            text-wrap: nowrap;
+          }
+        }
+
+        .designation-wrap {
+          .ql-editor,
+          .designation {
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: 3px;
+            line-height: 19px;
+            font-weight: 400;
+            background-color: black;
+            padding-bottom: 10px;
+            text-wrap: nowrap;
+            font-family: Verdana, Geneva, sans-serif;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .image {
+        display: none;
+      }
+    }
+
+    .resume-contact {
+      padding-inline: 30px;
+
+      .sections-title {
+        display: none;
+      }
+
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+
+      .contact-column-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+        text-wrap: nowrap;
+      }
+
+      .iconContainer {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .resume-about {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    padding-inline: 30px;
+
+    .ql-editor,
+    .about-content {
+      color: #000;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  .resume-work {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    padding-top: 12px;
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    }
+
+    .ql-editor {
+      .ql-editor,
+      .location {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    }
+
+    .resume-date-picker {
+      color: #000;
+      font-family: Verdana, Geneva, sans-serif;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+        font-weight: 700;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    }
+  }
+
+  .resume-skills {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .skill-type {
+      display: flex;
+      gap: 30px;
+      list-style: disc;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: Verdana, Geneva, sans-serif;
+      margin-left: 12px;
+    }
+  }
+
+  .resume-education {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: Verdana, Geneva, sans-serif;
+          margin-bottom: 0px;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: Verdana, Geneva, sans-serif;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+      }
+
+      .date {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    }
+  }
+
+  .resume-certification {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #000;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+//RESUME TEMPLATE 10
+.resumeTemplate10 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // padding: 30px;
+  padding: 10px;
+
+  .section-seperate,
+  .seperate-horizantal,
+  .resume-leadership,
+  .resume-communication {
+    display: none;
+  }
+
+  .seperateHeading {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+  }
+
+  //section titles
+  .sections-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    input,
+    h2 {
+      color: #000;
+      font-weight: 400;
+      font-family: "Libre Franklin", "Arial", sans-serif;
+      letter-spacing: 2px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .sectionsColumn,
+  .leftColumn,
+  .edu-projct {
+    display: flex;
+    flex-direction: column;
+    // gap: 20px;
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .resume-profile {
+      .seperateHeading {
+        display: none;
+      }
+
+      .name-designation {
+        .name-wrap {
+          .ql-editor,
+          .name,
+          p {
+            color: #000;
+            font-family: "Libre Franklin", "Arial", sans-serif;
+            font-size: 36px;
+            // font-weight: 400;
+          }
+        }
+
+        // .designation-wrap {
+        //   display: none;
+        // }
+      }
+
+      .image {
+        display: none;
+      }
+    }
+
+    .resume-contact {
+      .sections-title,
+      .seperateHeading {
+        display: none;
+      }
+
+      .contact-column-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+
+        .contact-column {
+          display: grid;
+          grid-template-columns: 14px auto;
+          word-break: break-word;
+        }
+      }
+
+      .ql-editor,
+      .contact-details {
+        color: #000;
+        font-family: "Libre Franklin", "Arial", sans-serif;
+        font-size: 12px;
+        text-wrap: nowrap;
+        display: flex;
+        // font-weight: 400 !important;
+        position: relative;
+
+        // &::before {
+        //   content: "•";
+        //   position: absolute;
+        //   left: -12px;
+        // }
+      }
+
+      .iconContainer {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .resume-work {
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .job-wrap {
+        .ql-editor,
+        .job {
+          color: #000;
+          font-family: "Libre Franklin", "Arial", sans-serif;
+        }
+      }
+
+      .company-wrap {
+        .ql-editor,
+        .company {
+          color: #000;
+          font-family: "Libre Franklin", "Arial", sans-serif;
+        }
+      }
+
+      .resume-date-picker {
+        color: #000;
+        font-family: "Libre Franklin", "Arial", sans-serif;
+
+        .ant-picker-input > input {
+          font-size: 10px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: "Libre Franklin", "Arial", sans-serif;
+        // margin-left: 10px;
+      }
+    }
+  }
+
+  .resume-skills {
+    .skill-type {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: disc;
+      margin-left: 10px;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: "Libre Franklin", "Arial", sans-serif;
+      // margin-left: 12px;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .education-content-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .degree-wrap {
+          .ql-editor,
+          .degree {
+            color: #000;
+            font-family: "Libre Franklin", "Arial", sans-serif;
+            margin-bottom: 0px;
+            font-weight: 400;
+          }
+        }
+
+        .degree-date {
+          display: flex;
+          justify-content: space-between;
+
+          .college-wrap {
+            .ql-editor,
+            .college {
+              color: #000;
+              font-family: "Libre Franklin", "Arial", sans-serif;
+              margin-bottom: 0px;
+            }
+          }
+
+          .resume-date-picker {
+            color: #000;
+            font-weight: 400;
+            font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-activities {
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .title-date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .name-wrap {
+          .ql-editor,
+          .project-name {
+            color: #000;
+            font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
+            font-weight: 600;
+            margin-bottom: 0px;
+            font-size: 13px;
+          }
+        }
+
+        .resume-date-picker {
+          color: #000;
+          font-weight: 400;
+          font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
+
+          .ant-picker-input > input {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .description-wrap {
+        .ql-editor,
+        .project-description {
+          color: #000;
+          font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Arial",
+            sans-serif;
+          font-size: 12px;
+          list-style-type: disc;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .resume-work {
+    .project_description {
+      .ql-editor,
+      .proj_description {
+        color: #000;
+        font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Arial",
+          sans-serif;
+        // margin-left: 10px;
+      }
+    }
+  }
+}
+
+//RESUME TEMPLATE11
+.resumeTemplate11 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+
+  .section-seperate,
+  .seperate-horizantal,
+  .resume-certification,
+  .resume-activities {
+    display: none;
+  }
+
+  .seperateHeading {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+  }
+
+  //section titles
+  .sections-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    input,
+    h2 {
+      color: #000;
+      font-weight: 400;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      letter-spacing: 2px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .sectionsColumn,
+  .leftColumn,
+  .edu-projct {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .resume-profile {
+      .seperateHeading {
+        display: none;
+      }
+
+      .name-designation {
+        .name-wrap {
+          .ql-editor,
+          .name {
+            color: #000;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+        }
+
+        .designation-wrap {
+          .ql-editor,
+          .designation {
+            color: #000;
+            font-family: Calibri, sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .image {
+        display: none;
+      }
+    }
+
+    .resume-contact {
+      // align-self: end;
+
+      .sections-title,
+      .seperateHeading {
+        display: none;
+      }
+
+      .contact-content {
+        gap: 10px;
+      }
+
+      .contact-details {
+        color: #000;
+        font-family: Calibri, sans-serif;
+        font-size: 11px;
+        text-align: right;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .resume-work {
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .job-wrap {
+        width: 67%;
+        margin-inline-start: auto;
+
+        .ql-editor,
+        .job {
+          color: #000;
+          font-family: Calibri, sans-serif;
+        }
+      }
+
+      .company-date {
+        flex-direction: row-reverse;
+
+        .company-wrap {
+          width: 67%;
+
+          .ql-editor,
+          .company {
+            color: #000;
+            font-family: Calibri, sans-serif;
+          }
+        }
+
+        .resume-date-picker {
+          color: #000;
+          font-family: Calibri, sans-serif;
+
+          .ant-picker-input > input {
+            font-size: 13px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .description-wrap {
+      width: 67%;
+      margin-inline-start: auto;
+
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: Calibri, sans-serif;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-skills {
+    .skill-type {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: Calibri, sans-serif;
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .education-content-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .degree-wrap {
+          width: 67%;
+          margin-inline-start: auto;
+
+          .ql-editor,
+          .degree {
+            color: #000;
+            font-family: Calibri, sans-serif;
+            margin-bottom: 0px;
+            font-size: 11px;
+            font-weight: 400;
+          }
+        }
+
+        .degree-date {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row-reverse;
+
+          .college-wrap {
+            width: 67%;
+            margin-inline-start: auto;
+
+            .ql-editor,
+            .college {
+              color: #000;
+              font-family: Calibri, sans-serif;
+              font-size: 11px;
+              margin-bottom: 0px;
+            }
+          }
+
+          .resume-date-picker {
+            color: #000;
+            font-family: Calibri, sans-serif;
+
+            .ant-picker-input > input {
+              font-size: 13px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resume-communication {
+    .ql-editor,
+    .communication-content {
+      color: #000;
+      font-family: Calibri, sans-serif;
+      font-size: 11px;
+    }
+  }
+
+  .resume-leadership {
+    .ql-editor,
+    .leadership-content {
+      color: #000;
+      font-family: Calibri, sans-serif;
+      font-size: 11px;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #000;
+      font-family: Calibri, sans-serif;
+      font-size: 11px;
+    }
+  }
+}
+
+//RESUME TEMPLATE 12
+.resumeTemplate12 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .section-seperate {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    gap: 16px;
+
+    .leftColumn {
+      width: 40%;
+      background-color: #ededed;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .rightColumn {
+      width: 60%;
+      padding-bottom: 30px;
+    }
+  }
+
+  .seperateHeading {
+    width: 100%;
+    height: 1px;
+    background-color: #0475bc;
+  }
+
+  .headerWrap {
+    display: flex;
+
+    .profile-data {
+      padding: 30px;
+    }
+
+    .profile-heading {
+      background-color: #0475bc;
+      width: 40px;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Open Sans";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input,
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        transform: rotate(270deg);
+        letter-spacing: 3px;
+      }
+    }
+
+    .resume-contact {
+      align-self: flex-start !important;
+
+      .sections-title,
+      .seperateHeading {
+        display: none;
+      }
+
+      .contact-content {
+        gap: 10px;
+      }
+
+      .contact-details {
+        color: #000;
+        font-family: Calibri, sans-serif;
+        font-size: 11px;
+        text-align: right;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .work-education-wrap {
+    padding-block: 30px;
+    display: flex;
+
+    .date-wrapper {
+      background-color: #2c2f37;
+      width: 142px;
+      margin-right: 30px;
+    }
+  }
+
+  .resume-image {
+    display: none;
+  }
+
+  .resume-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .seperateHeading,
+    .image {
+      display: none;
+    }
+
+    .name-wrap {
+      .ql-editor,
+      .name {
+        color: #2c2f37;
+        font-family: "Open Sans", sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+
+    .designation-wrap {
+      .ql-editor,
+      .designation {
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #2c2f37;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+
+      .contact-column {
+        grid-template-columns: 22px auto;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          bottom: -5px;
+          background-color: #c9c9c9;
+        }
+      }
+
+      .contact-column-wrap {
+        gap: 12px;
+      }
+    }
+
+    .contact-details {
+      color: #626363;
+      font-family: "Open Sans", sans-serif;
+      font-size: 10px;
+    }
+
+    .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: #2c2f37;
+
+      svg {
+        color: #fff;
+      }
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #626363;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    .sections-title {
+      display: none;
+    }
+  }
+
+  .resume-work {
+    .sectionWithLine {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: -5px;
+        background-color: #c9c9c9;
+      }
+    }
+
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #2c2f37;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #626363;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .work-date {
+      background-color: #2c2f37;
+      transform: rotate(270deg);
+      position: absolute;
+      left: -107px;
+      top: 75px;
+
+      .date-seperator {
+        color: white;
+      }
+    }
+
+    .resume-date-picker {
+      color: #fff;
+      font-family: Calibri, sans-serif;
+
+      .ant-picker-input > input {
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #626363;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+
+  .resume-skills-progress {
+    .dashed-skill {
+      display: none;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #626363;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    .ant-progress {
+      .ant-progress-inner {
+        border-radius: 20px !important;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+
+        // background-color:#fff;
+      }
+
+      .ant-progress-bg {
+        background-color: #0475bc;
+        border-radius: 20px;
+        margin: 2px !important;
+      }
+
+      .ant-progress-text {
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .education-content-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .degree-wrap {
+          .ql-editor,
+          .degree {
+            color: #2c2f37;
+            font-family: "Open Sans", sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            font-size: 10px;
+            font-weight: 600;
+          }
+        }
+
+        .degree-date {
+          position: relative;
+
+          .college-wrap {
+            .ql-editor,
+            .college {
+              color: #828383;
+              font-family: "Open Sans", sans-serif;
+              font-style: italic;
+              font-size: 10px;
+              margin-bottom: 0px;
+              font-weight: 400;
+            }
+          }
+
+          .education-date {
+            background-color: #2c2f37;
+            transform: rotate(270deg);
+            position: absolute;
+            left: -110px;
+
+            .date-seperator {
+              color: white;
+            }
+          }
+
+          .resume-date-picker {
+            color: #fff;
+            font-family: Calibri, sans-serif;
+
+            .ant-picker-input > input {
+              font-size: 13px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #2c2f37;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-reference {
+    .reference-content {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .referentName-wrap {
+      .ql-editor,
+      .refernt-name {
+        font-weight: 700;
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+      }
+    }
+
+    .referentInstitute-wrap {
+      .ql-editor,
+      .refernt-institute {
+        font-weight: 400;
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+      }
+    }
+
+    .referentPhone-wrap {
+      .ql-editor,
+      .refernt-phone {
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    .referentEmail-wrap {
+      .ql-editor,
+      .refernt-email {
+        color: #626363;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    .info-heading {
+      color: #626363;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+//Resume Template 13
+.resumeTemplate13 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+
+  .seperate-horizantal,
+  .resume-leadership,
+  .resume-communication,
+  .section-seperate,
+  .resume-reference {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    gap: 16px;
+    background-image: url("src/assets/images/templates/resume/bgResume.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-block: 20px;
+
+    .leftColumn,
+    .rightColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .leftColumn {
+      width: 40%;
+      padding: 30px 26px;
+    }
+
+    .rightColumn {
+      width: 60%;
+      padding-block: 30px;
+
+      .sections-title {
+        input,
+        h2 {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .seperateHeading {
+    width: 100%;
+    height: 1px;
+    background-color: #94b6d2;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #548ab7;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      background-color: #94b6d2;
+      border-radius: 50%;
+      padding: 5px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .resume-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .seperateHeading,
+    .image {
+      display: none;
+    }
+
+    .name-wrap {
+      .ql-editor,
+      .name {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+
+    .designation-wrap {
+      .ql-editor,
+      .designation {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 10px;
+
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+
+      .contact-column-wrap {
+        gap: 10px;
+      }
+    }
+
+    .contact-details {
+      color: #000;
+      font-family: "Century Gothic", "Arial", sans-serif;
+
+      font-size: 10px;
+    }
+
+    .iconContainer {
+      display: none;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #000;
+      font-family: "Century Gothic", "Arial", sans-serif;
+      font-size: 12px;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #000;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #626363;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+
+  .resume-skills-progress {
+    .dashed-skill {
+      display: none;
+    }
+
+    .skill-wrap {
+      display: grid;
+      grid-template-columns: 50px auto;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .ant-progress {
+      .ant-progress-inner {
+        border-radius: 0px !important;
+        height: 12px;
+        // background-color:#fff;
+      }
+
+      .ant-progress-bg {
+        background-color: #2f5597;
+        border-radius: 0px;
+        height: 12px !important;
+      }
+
+      .ant-progress-text {
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          margin-bottom: 0px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-weight: 600;
+          margin-bottom: 0px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+//Resume template 14
+
+.resumeTemplate14 {
+  .seperateHeading {
+    width: 60%;
+    height: 2px;
+    background: #000;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #000;
+      letter-spacing: 3px;
+      font-family: Cabin;
+      padding-inline: 4px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .resume-image {
+      display: none;
+    }
+
+    .resume-profile {
+      padding: 40px 30px 0px 30px;
+      width: 100%;
+
+      .image {
+        display: none;
+      }
+
+      .name-designation {
+        .seperateHeading {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+      }
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 36px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+      }
+
+      .designation-wrap {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          bottom: -8px;
+          left: 0px;
+        }
+
+        .ql-editor,
+        .designation {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 10px;
+
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: #000;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #2e324b;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #535353;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .company-wrap {
+      .ql-editor,
+      .company {
+        color: #535353;
+        font-family: Cabin;
+        font-weight: 400;
+      }
+    }
+
+    .location-wrap {
+      .ql-editor,
+      .location {
+        color: #2e324b;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .resume-date-picker {
+      color: #2e324b;
+      font-family: "Century Gothic", "Arial", sans-serif;
+
+      .ant-picker-input > input {
+        font-size: 10px;
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+  }
+
+  .resume-certification {
+    display: none;
+  }
+
+  .resume-skills {
+    .ql-editor,
+    .skill-content {
+      color: #000;
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+  }
+
+  .resume-language2 {
+    display: none;
+  }
+
+  .resume-language {
+    .language-content {
+      .ql-editor,
+      .language-name {
+        font-family: "Century Gothic", "Arial", sans-serif;
+        color: #000;
+      }
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 8px;
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: "Century Gothic", "Arial", sans-serif;
+
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+
+      .resume-date-picker {
+        color: #000;
+        font-family: "Century Gothic", "Arial", sans-serif;
+
+        font-weight: 600;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-reference {
+    .referentName-wrap {
+      .ql-editor,
+      .refernt-name {
+        font-weight: 700;
+        font-family: "Century Gothic", "Arial", sans-serif;
+
+        color: #000;
+      }
+    }
+
+    .referentInstitute-wrap {
+      .ql-editor,
+      .refernt-institute {
+        font-weight: 500;
+        font-family: "Century Gothic", "Arial", sans-serif;
+
+        color: #535353;
+      }
+    }
+
+    .referentPhone-wrap {
+      .ql-editor,
+      .refernt-phone {
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .referentEmail-wrap {
+      .ql-editor,
+      .refernt-email {
+        font-family: "Century Gothic", "Arial", sans-serif;
+      }
+    }
+
+    .info-heading {
+      font-family: "Century Gothic", "Arial", sans-serif;
+    }
+  }
+}
+
+//Resume Template 15
+.resumeTemplate15 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .resume-skills,
+  .resume-skills-progress,
+  .section-seperate,
+  .resume-certification,
+  .seperateHeading {
+    display: none;
+  }
+
+  .seperate-horizantal {
+    width: 100%;
+    background-color: gray;
+    height: 1px;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    gap: 16px;
+
+    .leftColumn,
+    .rightColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .leftColumn {
+      width: 40%;
+      padding: 30px 26px;
+      background-color: #dee4eb;
+    }
+
+    .rightColumn {
+      width: 60%;
+      padding: 30px 26px;
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #000;
+      font-family: "Bookman Old Style", Bookman, serif;
+      font-weight: 400;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      background-color: #000;
+      border-radius: 50%;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .resume-profile {
+    .image {
+      display: none;
+    }
+
+    .name-designation {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #000;
+          font-family: "Bookman Old Style", Bookman, serif;
+          font-size: 36px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background-color: #465870;
+            width: 100%;
+            bottom: -2px;
+          }
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #465870;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 12px;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      .contact-column {
+        grid-template-columns: auto;
+        word-break: break-word;
+      }
+
+      .contact-column-wrap {
+        gap: 0px;
+      }
+    }
+
+    .contact-details {
+      color: #000;
+      font-size: 10px;
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
+    .iconContainer {
+      display: none;
+    }
+  }
+
+  .resume-communication {
+    .ql-editor,
+    .communication-content {
+      color: #000;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .resume-leadership {
+    .ql-editor,
+    .leadership-content {
+      color: #000;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .resume-work {
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #000;
+        font-size: 12px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+      }
+    }
+
+    .company-date {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .company-wrap {
+        .ql-editor,
+        .company {
+          color: #000;
+          font-weight: 400;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 12px;
+        }
+      }
+
+      .resume-date-picker {
+        color: #000;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Source Sans Pro", sans-serif;
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #000;
+        font-size: 10px;
+        font-weight: 600;
+        font-family: "Source Sans Pro", sans-serif;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-education {
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #000;
+          font-family: "Source Sans Pro", sans-serif;
+          margin-bottom: 0px;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #000;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 400;
+          margin-bottom: 0px;
+          font-size: 12px;
+        }
+      }
+
+      .resume-date-picker {
+        color: #000;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Source Sans Pro", sans-serif;
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #000;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #000;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-reference {
+    .reference-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .refernt-institute,
+    .refernt-phone,
+    .refernt-email,
+    .info-heading {
+      color: #000;
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .refernt-institute {
+      font-weight: 700;
+    }
+  }
+}
+
+//RESUME TEMPLATE 16
+.resumeTemp16 {
+  padding: 28px;
+
+  .resume-language,
+  .resume-skills {
+    display: none;
+  }
+
+  .rightContent {
+    padding: 0px 28px;
+  }
+
+  .leftContent {
+    padding: 11px 20px;
+  }
+
+  .seperateHeading {
+    width: 100%;
+    height: 1px;
+    background: black;
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #4d4a4b;
+      letter-spacing: 5px;
+      font-family: "Roboto", "Inter";
+      padding-inline: 4px;
+      margin-left: 18px;
+      position: relative;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        color: #dc9d22;
+        font-size: 30px;
+        font-weight: 600;
+        left: -18px;
+        top: -10px;
+      }
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .profile-content {
+    display: flex;
+    width: 100%;
+
+    .seperateHeading {
+      display: none;
+    }
+
+    .resume-image {
+      padding: 28px;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+      .image {
+        width: 110px;
+        height: 110px;
+        background-color: #4d4a4b;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .resume-profile {
+      order: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 40px 30px 0px 30px;
+
+      .image {
+        display: none;
+      }
+
+      .name-designation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        .name-wrap {
+          .ql-editor,
+          .name {
+            color: #4d4a4b;
+            font-family: "Lato", sans-serif;
+            font-size: 39px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-wrap: nowrap;
+          }
+        }
+
+        .designation-wrap {
+          .ql-editor,
+          .designation {
+            color: #4d4a4b;
+            font-family: "Century Gothic", "Arial", sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 12px;
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: #4d4a4b;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    svg {
+      color: #dc9d22;
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #4d4a4b;
+      font-family: "Droid Sans", sans-serif;
+    }
+  }
+
+  .resume-work {
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .job-wrap {
+        .ql-editor,
+        .job {
+          color: #4d4a4b;
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 3px;
+          font-family: "Roboto", "Inter";
+          margin-left: 15px;
+        }
+      }
+
+      .company-wrap {
+        .ql-editor,
+        .company {
+          color: #4d4a4b;
+          font-family: "Droid Sans", sans-serif;
+          font-size: 12px;
+          margin-left: 15px;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "+";
+            left: -15px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .resume-date-picker {
+        color: #4d4a4b;
+        font-family: "Droid Sans", sans-serif;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #4d4a4b;
+        font-family: "Droid Sans", sans-serif;
+        font-size: 10px;
+        line-height: 24px;
+        margin-left: 15px;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    display: none;
+  }
+
+  .resume-skills-progress {
+    .dashed-skill {
+      display: none;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #4d4a4b;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .ant-progress {
+      .ant-progress-inner {
+        border-radius: 0px !important;
+        height: 12px;
+        background-color: #b5b5b6;
+      }
+
+      .ant-progress-bg {
+        background-color: #4d4a4b;
+        border-radius: 0px;
+        height: 12px !important;
+      }
+
+      .ant-progress-text {
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .resume-language2 {
+    display: none;
+  }
+
+  .resume-education {
+    .education-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 8px;
+
+      // .degree-date {
+      //     display: flex;
+      //     justify-content: space-between;
+      // }
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #4d4a4b;
+          font-family: "Roboto", "Inter";
+          margin-left: 15px;
+          position: relative;
+          text-transform: uppercase;
+          font-size: 14px;
+
+          &::before {
+            position: absolute;
+            content: "+";
+            left: -15px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .college-wrap {
+        .ql-editor,
+        .college {
+          color: #4d4a4b;
+          font-family: "Roboto", "Inter";
+          font-size: 12px;
+          font-weight: 500;
+          margin-left: 15px;
+        }
+      }
+
+      .date-seperator {
+        color: #4d4a4b;
+      }
+
+      .resume-date-picker {
+        color: #4d4a4b;
+        font-family: "Roboto", "Inter";
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 15px;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .resume-follow {
+    .follow-subheading {
+      font-family: "Roboto", "Inter";
+      color: #4d4a4b;
+      font-size: 14px;
+    }
+
+    .ql-editor,
+    .follow-details {
+      color: #4d4a4b;
+      font-family: "Roboto", "Inter";
+      font-size: 12px;
+    }
+  }
+
+  .resume-reference {
+    display: none;
+  }
+}
+
+//RESUME TEMPLATE 17
+.resumeTemplate17 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f0f0;
+  gap: 12px;
+
+  .sectionsColumn {
+    display: flex;
+    gap: 16px;
+    padding: 28px;
+
+    .leftColumn {
+      width: 60%;
+    }
+
+    .rightColumn {
+      width: 40%;
+    }
+  }
+
+  .seperateHeading {
+    display: none;
+  }
+
+  .section-seperate {
+    width: 5px;
+    height: 100%;
+    background-color: #e3e2e2;
+  }
+
+  .headerWrap {
+    background-color: #e3e2e2;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    padding: 28px 20px;
+  }
+
+  .resume-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #e3e2e2;
+
+    .image {
+      background-color: #5b9bd5;
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    .name-designation {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #535353;
+          font-family: "Sansation", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #535353;
+          font-size: 10px;
+          font-weight: 600;
+          font-family: "Sansation", sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #000;
+      font-family: "Sansation", sans-serif;
+      position: relative;
+    }
+
+    svg {
+      color: #000;
+    }
+
+    .iconLine {
+      display: block;
+    }
+
+    .iconTitle {
+      display: none;
+    }
+  }
+
+  .resume-contact {
+    .sections-title {
+      display: none;
+    }
+
+    .contact-content {
+      gap: 12px;
+    }
+
+    .contact-details {
+      color: #000;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 8px;
+    }
+
+    .iconContainer {
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+
+      svg {
+        color: #000;
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .resume-about {
+    .ql-editor,
+    .about-content {
+      color: #494849;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 10px;
+    }
+  }
+
+  .resume-work {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 75%;
+      background-color: #494849;
+      left: 68px;
+      top: 45px;
+    }
+
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .job-wrap {
+        width: 76%;
+        margin-inline-start: auto;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: ".";
+          font-size: 20px;
+          font-weight: 800;
+          color: #494849;
+          left: -13px;
+          top: -44px;
+        }
+
+        .ql-editor,
+        .job {
+          color: #494849;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 10px;
+          font-style: italic;
+          font-weight: 500;
+        }
+      }
+
+      .company-date {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+
+        .company-wrap {
+          width: 76%;
+
+          .ql-editor,
+          .company {
+            color: #272425;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+          }
+        }
+
+        .work-date {
+          .date-wrap {
+            display: flex;
+            flex-direction: column !important;
+            gap: 0px;
+
+            .date-seperator {
+              display: none;
+            }
+
+            .resume-date-picker {
+              color: #000;
+              font-family: "Source Sans Pro", sans-serif;
+
+              .ant-picker-input > input {
+                font-size: 10px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .description-wrap {
+      width: 76%;
+      margin-inline-start: auto;
+
+      .ql-editor,
+      .description {
+        color: #494849;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 10px;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-skills-progress {
+    .progressbar-skill {
+      display: none;
+    }
+
+    .skill-wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .ql-editor,
+      .skill-content {
+        color: #494849;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .resume-education {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 40%;
+      background-color: #494849;
+      left: 68px;
+      top: 40px;
+    }
+
+    .education-content {
+      .education-content-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .degree-wrap {
+          width: 76%;
+          margin-inline-start: auto;
+
+          .ql-editor,
+          .degree {
+            color: #494849;
+            font-family: "Source Sans Pro", sans-serif;
+            font-style: italic;
+            font-size: 10px;
+            margin-bottom: 0px;
+          }
+        }
+
+        .degree-date {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: row-reverse;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: ".";
+            font-size: 20px;
+            font-weight: 800;
+            color: #494849;
+            left: 61px;
+            top: -12px;
+          }
+
+          .college-wrap {
+            width: 76%;
+            margin-inline-start: auto;
+
+            .ql-editor,
+            .college {
+              color: #272425;
+              font-family: "Source Sans Pro", sans-serif;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-weight: 600;
+            }
+          }
+
+          .education-date {
+            .date-wrap {
+              display: flex;
+              flex-direction: column !important;
+              gap: 0px;
+
+              .date-seperator {
+                display: none;
+              }
+
+              .resume-date-picker {
+                color: #000;
+                font-family: "Source Sans Pro", sans-serif;
+
+                .ant-picker-input > input {
+                  font-size: 10px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #272425;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #494849;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-reference {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0px 28px 28px 28px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -16px;
+      width: 90%;
+      height: 5px;
+      background-color: #e3e2e2;
+    }
+
+    .sections-title {
+      width: 40%;
+    }
+
+    .reference-content {
+      display: flex;
+      justify-content: flex-start;
+      gap: 40px;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .refernt-institute,
+    .refernt-phone,
+    .refernt-email,
+    .info-heading {
+      color: #494849;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 10px !important;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .info-heading {
+      color: #272425;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+//RESUME TEMPLATE 18
+.resumeTemplate18 {
+  background-color: #fbfaf7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+
+  .seperate-horizantal {
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    background-color: black;
+  }
+
+  //section titles
+  .sections-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    input,
+    h2 {
+      color: #444440;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .seperateHeading,
+  .resume-leadership,
+  .resume-communication,
+  .resume-activities {
+    display: none;
+  }
+
+  .sectionsColumn {
+    display: flex;
+    flex-direction: column;
+
+    .leftColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  //Resume Contact and profile
+  .headerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .resume-profile {
+      .name-designation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+
+        .name-wrap {
+          .ql-editor,
+          .name {
+            color: #444440;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 42px;
+            font-weight: 500;
+            text-wrap: nowrap;
+          }
+        }
+
+        .designation-wrap {
+          .ql-editor,
+          .designation {
+            color: #444440;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .image {
+        display: none;
+      }
+    }
+  }
+
+  .resume-contact {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .contact-content {
+      .contact-column {
+        grid-template-columns: auto;
+      }
+    }
+
+    .ql-editor,
+    .contact-details {
+      color: #444440;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      text-wrap: nowrap;
+    }
+
+    .iconContainer {
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .resume-about {
+    .sections-title {
+      display: none;
+    }
+
+    .ql-editor,
+    .about-content {
+      color: #444440;
+      font-family: "Montserrat", sans-serif;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  .resume-work {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    padding-top: 12px;
+
+    .job-wrap {
+      .ql-editor,
+      .job {
+        color: #444440;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+
+    .company-date {
+      justify-content: flex-start;
+      gap: 10px;
+
+      .company-wrap {
+        .ql-editor,
+        .company {
+          color: #444440;
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+
+      .resume-date-picker {
+        color: #444440;
+        font-family: "Montserrat", sans-serif;
+
+        .ant-picker-input > input {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #444440;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-skills {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .skill-type {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      list-style: disc;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #444440;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 12px;
+    }
+  }
+
+  .resume-education {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .education-content {
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #444440;
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 0px;
+        }
+      }
+
+      .degree-date {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        .college-wrap {
+          .ql-editor,
+          .college {
+            color: #444440;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0px;
+          }
+        }
+
+        .resume-date-picker {
+          color: #444440;
+          font-family: "Montserrat", sans-serif;
+
+          .ant-picker-input > input {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    display: grid;
+    grid-template-columns: 12rem auto;
+
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #444440;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #444440;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+//Resume Template 19
+.resumeTemplate19 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .resume-about {
+    display: none;
+  }
+
+  .seperateHeading {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+
+  .sectionsColumn {
+    display: flex;
+
+    .leftColumn,
+    .rightColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .leftColumn {
+      width: 30%;
+      padding: 30px 26px;
+      background-color: #e0e0df;
+    }
+
+    .rightColumn {
+      width: 70%;
+    }
+  }
+
+  //section titles
+  .sections-title {
+    input,
+    h2 {
+      color: #3f3f40;
+      font-family: "Roboto", serif;
+      font-weight: 500;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .resume-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      background-color: #707070;
+      border-radius: 50%;
+      padding: 4px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .resume-profile {
+    background-color: #f3f3f3;
+    padding: 30px 26px;
+
+    .image {
+      display: none;
+    }
+
+    .name-designation {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .name-wrap {
+        .ql-editor,
+        .name {
+          color: #3f3f40;
+          font-family: "Rubik", sans-serif;
+          font-size: 36px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+      }
+
+      .designation-wrap {
+        .ql-editor,
+        .designation {
+          color: #3f3f40;
+          font-family: "Rubik", sans-serif;
+          font-size: 12px;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .resume-contact {
+    .contact-content {
+      gap: 8px;
+
+      .contact-column {
+        grid-template-columns: auto;
+      }
+    }
+
+    .contact-details {
+      color: #3f3f40;
+      font-family: "Roboto", serif;
+      font-size: 10px;
+    }
+
+    .iconContainer {
+      display: none;
+    }
+  }
+
+  .resume-work {
+    padding: 0px 26px 30px 26px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      background-color: #000;
+      height: 100%;
+    }
+
+    .sections-title {
+      input,
+      h2 {
+        margin-left: 12px;
+      }
+    }
+
+    .seperateHeading {
+      margin-left: -15px;
+    }
+
+    .sectionWithLine {
+      margin-left: 12px;
+    }
+
+    .job-company-date {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .job-wrap {
+        .ql-editor,
+        .job {
+          color: #3f3f40;
+          font-family: "Roboto", serif;
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+
+      .company-date {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        .company-wrap {
+          .ql-editor,
+          .company {
+            color: #3f3f40;
+            font-family: "Roboto", serif;
+            font-size: 10px;
+            font-weight: 400;
+          }
+        }
+
+        .resume-date-picker {
+          color: #3f3f40;
+          font-family: "Roboto", serif;
+          font-size: 10px;
+
+          .ant-picker-input > input {
+            font-family: "Roboto", serif;
+            font-size: 10px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    .description-wrap {
+      .ql-editor,
+      .description {
+        color: #3f3f40;
+        font-family: "Roboto", serif;
+        font-size: 10px;
+        font-weight: 400;
+
+        .decsription-list {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .resume-education {
+    padding: 30px 26px 0px 26px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      background-color: #000;
+      height: 80%;
+    }
+
+    .sections-title {
+      input,
+      h2 {
+        margin-left: 12px;
+      }
+    }
+
+    .seperateHeading {
+      margin-left: -15px;
+    }
+
+    .education-content .education-content-wrap {
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column-reverse;
+
+      .degree-wrap {
+        .ql-editor,
+        .degree {
+          color: #3f3f40;
+          font-family: "Roboto", serif;
+          font-size: 10px;
+          font-weight: 400;
+          margin-bottom: 0px;
+        }
+      }
+
+      .degree-date {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .college-wrap {
+          .ql-editor,
+          .college {
+            color: #3f3f40;
+            font-family: "Roboto", serif;
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 0px;
+          }
+        }
+
+        .resume-date-picker {
+          color: #3f3f40;
+          font-family: "Roboto", serif;
+          font-size: 10px;
+
+          .ant-picker-input > input {
+            font-family: "Roboto", serif;
+            font-size: 10px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-certification {
+    .title-wrap {
+      .ql-editor,
+      .title {
+        color: #3f3f40;
+        font-family: "Roboto", serif;
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+
+    .date-wrap {
+      .ql-editor,
+      .date {
+        color: #3f3f40;
+        font-family: "Roboto", serif;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .resume-reference {
+    padding: 30px 26px;
+
+    .reference-content {
+      display: flex;
+      justify-content: flex-start;
+      gap: 40px;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .refernt-institute,
+    .refernt-phone,
+    .refernt-email,
+    .info-heading {
+      color: #3f3f40;
+      font-family: "Roboto", serif;
+      font-size: 10px !important;
+    }
+
+    .ql-editor,
+    .refernt-name,
+    .refernt-institute {
+      font-weight: 600 !important;
+    }
+  }
+
+  .resume-skills-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .progressbar-skill {
+      display: none;
+    }
+
+    .ql-editor,
+    .skill-content {
+      color: #3f3f40;
+      font-family: "Roboto", serif;
+      font-size: 10px;
+    }
+  }
+}
+
+.resumeTemp1 .resume-work .resume-date-picker .ant-picker-input > input {
+  font-size: 10px;
+  height: 25px;
+}

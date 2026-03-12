@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  // p{
+  //   font-size: 16px;
+  // }
+  .para-large {
+    font-size: 20px;
+  }
+
+  .para-med {
+    font-size: 18px;
+  }
+
+  .para-small {
+    font-size: 16px;
+  }
+
+  .para-text {
+    font-size: 14px;
+  }
+
+  .para-ex-small {
+    font-size: 12px;
+  }
+}
+
+.font-Inter {
+  font-family: "Inter", "Roboto";
+}
+.font-parata {
+  font-family: "Prata", serif;
+}
+.font-poppin {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-OpenSan {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-Lato {
+  font-family: "Lato", sans-serif;
+}
+.font-display {
+  font-family: "SF Pro Display", sans-serif;
+}
+.font-cabin {
+  font-family: "Cabin", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  margin-top: 200px !important;
+}
+@media screen and (max-width: 1500px) {
+  body {
+    .para-small {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    h1 {
+      font-size: 30px;
+    }
+
+    // h2 {
+    //   font-size: 26px;
+    // }
+
+    // h3 {
+    //   font-size: 20px;
+    // }
+
+    // h4 {
+    //   font-size: 18px;
+    // }
+
+    // .para-large {
+    //   font-size: 18px;
+    // }
+
+    // .para-med {
+    //   font-size: 16px;
+    // }
+
+    // .para-small {
+    //   font-size: 14px;
+    // }
+
+    // .para-ex-small {
+    //   font-size: 10px;
+    // }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    .para-large {
+      font-size: 18px;
+    }
+
+    .para-med {
+      font-size: 16px;
+    }
+
+    .para-ex-small {
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrap {
+    margin-top: 50px !important;
+  }
+}

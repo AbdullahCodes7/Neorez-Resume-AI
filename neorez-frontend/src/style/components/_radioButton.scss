@@ -1,0 +1,301 @@
+// .radio-wrapper  {
+//     display: flex;
+//     align-items: center;
+//     input[type="radio"] {
+//       margin: 0;
+//       padding: 0;
+//       -webkit-appearance: none;
+//       -moz-appearance: none;
+//       appearance: none;
+//       height: 1.2rem;
+//       width: 1.2rem;
+//       cursor: pointer;
+//       border-radius: 100%;
+//       border: 1px solid #373737;
+//       --b1: 100% 0 0;
+
+//       &:checked,
+//       &[aria-checked="true"] {
+//         background-color: #373737;
+//         animation: radiomark-27 var(--animation-input, 0.2s) ease-out;
+//         box-shadow: 0 0 0 4px oklch(var(--b1) / 1) inset,
+//           0 0 0 4px oklch(var(--b1) / 1) inset;
+//       }
+//     }
+//   }
+
+// @keyframes radiomark-27 {
+//   0% {
+//     box-shadow: 0 0 0 12px oklch(var(--b1) / 1) inset,
+//       0 0 0 12px oklch(var(--b1) / 1) inset;
+//   }
+
+//   50% {
+//     box-shadow: 0 0 0 3px oklch(var(--b1) / 1) inset,
+//       0 0 0 3px oklch(var(--b1) / 1) inset;
+//   }
+
+//   100% {
+//     box-shadow: 0 0 0 4px oklch(var(--b1) / 1) inset,
+//       0 0 0 4px oklch(var(--b1) / 1) inset;
+//   }
+// }
+
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+
+  input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 31px;
+    width: 31px;
+    cursor: pointer;
+    border-radius: 6px !important;
+    border: 1px solid white;
+    // background-color: #2A9DF4 !important;
+    --b1: 100% 0 0;
+
+    &:checked,
+    &[aria-checked="true"] {
+      border-radius: 6px !important;
+      animation: radiomark-27 var(--animation-input, 0.2s) ease-out;
+      // box-shadow: 0 0 0 4px oklch(var(--b1) / 1) inset,
+      //   0 0 0 4px oklch(var(--b1) / 1) inset;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.primaryRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #2a9df4 !important;
+    }
+  }
+}
+.orangeRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #f96b07 !important;
+    }
+  }
+}
+.orangeRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #cb4335 !important;
+    }
+  }
+}
+.greenRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #3cb371 !important;
+    }
+  }
+}
+.grayRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #6f7878 !important;
+    }
+  }
+}
+.purpleRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #951dc4 !important;
+    }
+  }
+}
+.blueRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #3c6df0 !important;
+    }
+  }
+}
+.lightBlueRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #56acf2 !important;
+    }
+  }
+}
+.brownRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #7c5711 !important;
+    }
+  }
+}
+.lightGreenRadio {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #00b6cb !important;
+    }
+  }
+}
+.greenRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #27ae60 !important;
+    }
+  }
+}
+
+.grayRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #bfc9ca !important;
+    }
+  }
+}
+
+.primaryRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #f39c12 !important;
+    }
+  }
+}
+
+.lightGreenRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #7dcea0 !important;
+    }
+  }
+}
+
+.orangeRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #ff6347 !important;
+    }
+  }
+}
+
+.blueRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #1e90ff !important;
+    }
+  }
+}
+
+.purpleRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #9370db !important;
+    }
+  }
+}
+
+.lightBlueRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #87cefa !important;
+    }
+  }
+}
+
+.brownRadio2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #8b4513 !important;
+    }
+  }
+}
+
+.orangeRadio2_2 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #ff7f50 !important;
+    }
+  }
+}
+
+.primaryRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #dc143c !important;
+    }
+  }
+}
+
+.greenRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #32cd32 !important;
+    }
+  }
+}
+
+.orangeRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #ff8c00 !important;
+    }
+  }
+}
+
+.blueRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #4682b4 !important;
+    }
+  }
+}
+
+.purpleRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #ba55d3 !important;
+    }
+  }
+}
+
+.grayRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #bebebe !important;
+    }
+  }
+}
+
+.brownRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #d2691e !important;
+    }
+  }
+}
+
+.lightBlueRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #b0e0e6 !important;
+    }
+  }
+}
+
+.orangeRadio2_3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #ff4500 !important;
+    }
+  }
+}
+
+.lightGreenRadio3 {
+  .radio-wrapper {
+    input[type="radio"] {
+      background-color: #98fb98 !important;
+    }
+  }
+}

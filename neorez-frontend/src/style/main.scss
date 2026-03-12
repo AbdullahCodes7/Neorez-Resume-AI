@@ -1,0 +1,59 @@
+@use "./global" as *;
+@use "sweetalert2/src/sweetalert2.scss";
+
+// base style
+@use "./base/color" as *;
+@use "./base/mixins" as *;
+@use "./base/reset" as *;
+@use "./base/font" as *;
+@use "./base/typography" as *;
+@use "./base/tailwindConfig" as *;
+@use "./base/animations" as *;
+
+// components
+@use "./components/button" as *;
+@use "./components/checkbox" as *;
+@use "./components/input" as *;
+@use "./components/pagination" as *;
+@use "./components/footer" as *;
+@use "./components/textarea" as *;
+@use "./components/alert" as *;
+@use "./components/radioButton" as *;
+@use "./components/navbar.scss" as *;
+
+//pages
+//HOME
+@use "./page/Home/faq.scss" as *;
+@use "./page/Home/hero.scss" as *;
+@use "./page/Home/howitwork.scss" as *;
+@use "./page/Home/templates.scss" as *;
+@use "./page/Home/userReview.scss" as *;
+@use "./page/Home/pricing.scss" as *;
+@use "./page/Home/blogs.scss" as *;
+@use "./page/Home/features.scss" as *;
+@use "./page/Home/userCard.scss" as *;
+@use "./page/singlePage.scss" as *;
+//SIGNUP
+@use "./page/signUp.scss" as *;
+
+//Contact
+@use "./page/footerLinks.scss" as *;
+
+//DASHBOARD
+@use "./Dashboard/dashboardMain.scss" as *;
+@use "./Dashboard/Modal.scss" as *;
+@use "./Dashboard/resume.scss" as *;
+//USER DASHBOARD COMPONENTS
+@use "./Dashboard/userDashboard/template.scss" as *;
+@use "./Dashboard/userDashboard/BuilderPages.scss" as *;
+@use "./Dashboard/userDashboard/resumeTemplate1.scss" as userResumeTemplate1;
+@use "./Dashboard/userDashboard/viewTemplate.scss" as *;
+// templates
+@use "./Dashboard//template/resumeTemplate.scss" as *;
+@use "./Dashboard//template/resumeTemplate1.scss" as templateResumeTemplate1;
+@use "./Dashboard//template/coverletterTemplate.scss" as *;
+@use "./Dashboard//template/resumeTemplate2.scss" as *;
+@use "./Dashboard//template/datePicker.scss" as *;
+
+//ADMIN DASHBOARD
+@use "./Dashboard/adminDashboard/manageContent.scss";

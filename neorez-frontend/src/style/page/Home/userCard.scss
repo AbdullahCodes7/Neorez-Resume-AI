@@ -1,0 +1,33 @@
+.userReviewCard {
+  width: 485px;
+  height: 233.156px;
+  border-radius: 17.798px;
+  background: rgba(198, 229, 253, 0.5);
+  padding: 25px 32px;
+  margin-top: 80px;
+
+  .leftArea {
+    width: 20%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .rightArea {
+    width: 80%;
+
+    .userDesc {
+      letter-spacing: 0.285px;
+    }
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .userReviewCard {
+    padding: 20px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+}

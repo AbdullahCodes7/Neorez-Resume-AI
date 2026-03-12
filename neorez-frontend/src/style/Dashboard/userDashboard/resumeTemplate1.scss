@@ -1,0 +1,25 @@
+.resumeTemplate {
+  .border {
+    border: 1px solid black;
+  }
+  .ql-editor {
+    padding: 5px 0px;
+    // font-family: "Open Sans", sans-serif;
+    // font-size: 12px;
+  }
+  .ql-toolbar.ql-snow {
+    border-radius: 8px;
+    background: rgb(0, 0, 0);
+    width: 289px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .ql-snow.ql-toolbar button {
+    box-shadow: none !important;
+  }
+  .ql-toolbar.ql-snow + .ql-container.ql-snow {
+    border-top: 1px solid #ccc;
+    margin-top: 3px;
+  }
+}

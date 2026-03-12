@@ -1,0 +1,140 @@
+:root {
+
+  --primary: #2A9DF4;
+  --darkBlue: #0087ED;
+  --primaryOpacity: rgba(42, 157, 244, 0.20);
+  --primaryOpacity2:rgba(42, 157, 244, 0.40);
+  --darkGray: #333;
+  --mediumGray: #6D6E71;
+  --black-shade: #2B2B2B;
+  --lightGray: #F2F2F2;
+  --white: #fff;
+  --gray: #6C6C76;
+  --gray-shade: #8E8E8E;
+  --grayShade2: #8F8F8F;
+  --grayShade3: #525A51;
+  --grayShade4: #F4F4F4;
+  --grayShade5: #959595;
+  --grayShade6: #676767;
+  --darkBlack: #343434;
+  --mediumBlack: #414042;
+  --red: #F42A2A;
+  --green:#2ECC70;
+  --black:#000;
+  --blue:#1C8EB5;
+  --lightBlue:#E4F6FB80;
+  --grayShade7:#797979;
+  
+
+}
+
+.black{
+  color: var(--black);
+}
+.blue{
+  color: var(--blue);
+}
+.lightBlueBg{
+  background-color: var(--lightBlue);
+}
+.grayShade7{
+color: var(--grayShade7);
+}
+.primary {
+  color: var(--primary);
+}
+.primaryBg {
+  background-color: var(--primary);
+}
+.redBg{
+  background: var(--red);
+}
+.greenBg{
+  background-color: var(--green);
+}
+.grayShade6Bg{
+  background-color: var(--grayShade6);
+}
+.darkBlue {
+  color: var(--darkBlue);
+}
+
+.primaryOpacity {
+  background: var(--primaryOpacity);
+}
+.primaryOpacity2 {
+  background: var(--primaryOpacity2);
+}
+
+.darkGray {
+  color: var(--darkGray);
+}
+
+.lightGray {
+  color: var(--lightGray);
+}
+.lightGrayBg {
+  background-color: var(--lightGray);
+}
+
+
+.white {
+  color: var(--white);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.gray-shade {
+  color: var(--gray-shade);
+}
+
+.black-shade {
+  color: var(--black-shade);
+}
+
+.GrayOpacity {
+  color: var(--darkGray);
+  opacity: 0.5;
+}
+
+.grayShade2 {
+  color: var(--grayShade2);
+}
+
+.grayShade3 {
+  color: var(--grayShade3);
+}
+
+.grayShade4 {
+  color: var(--grayShade4);
+}
+
+.grayShade5 {
+  color: var(--grayShade5);
+}
+
+.grayShade6 {
+  color: var(--grayShade6);
+}
+
+.red {
+  color: var(--red);
+}
+
+.darkBlack {
+  color: var(--darkBlack);
+}
+
+.backgroundGray {
+  background: var(--grayShade4);
+}
+
+.mediumBlack {
+  color: var(--mediumBlack);
+}
+
+.mediumGray {
+  color: var(--mediumGray);
+}

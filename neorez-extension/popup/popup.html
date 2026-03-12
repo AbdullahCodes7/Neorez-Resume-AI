@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <div id="login-container"></div>
+    <div id="apptracker-container">
+      <h1 class="head">Tracked Job Applications</h1>
+      <div class="buttons">
+        <button id="apptracker__add-current-selected-job-button">
+          Add Current Job
+        </button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Job Title</th>
+            <th>Location</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="apptracker__table-body-row"></tbody>
+      </table>
+    </div>
+    <script src="../env.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

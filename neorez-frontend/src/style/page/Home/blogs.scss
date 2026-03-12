@@ -1,0 +1,64 @@
+.blog {
+    .blog-container {
+        background-color: var(--lightGray);
+        border-radius: 18.02px;
+        padding: 47px 40px;
+        justify-content: center;
+        gap: 20px;
+
+    }
+    .overlay::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.5;
+        background: #000;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .blog {
+        h3 {
+            font-size: 20px;
+        }
+
+        .blog-container {
+            padding: 47px 20px;
+            gap: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .blog {
+        h3 {
+            font-size: 20px;
+        }
+        .blog-container {
+            flex-wrap: wrap;
+            padding: 47px 35px;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .blog {
+        .blog-container {
+            padding: 47px 20px;
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .blog {
+        .blog-container {
+            padding: 47px 20px;
+        }
+    }
+}
+

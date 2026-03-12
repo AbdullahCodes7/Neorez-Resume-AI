@@ -1,0 +1,126 @@
+section.faq {
+    .ant-collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background: transparent;
+    }
+
+    .ant-collapse,
+    .ant-collapse-item {
+        border: none !important;
+        border-radius: 10px;
+    }
+
+    .ant-collapse-item {
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+    }
+
+    .ant-collapse-arrow {
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+
+        svg {
+            fill: var(--primary);
+            width: 12px !important;
+            height: 12px !important;
+        }
+    }
+
+    .ant-collapse-header-text {
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .ant-collapse-item-active {
+
+
+        .ant-collapse-arrow {
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+            background-color: var(--primary);
+
+            svg {
+                fill: white;
+                width: 12px !important;
+                height: 12px !important;
+            }
+        }
+    }
+
+    .ant-collapse-item-active {
+        border: 1px solid var(--primary) !important;
+    }
+
+
+    .ant-collapse-content {
+        background: #fff;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+
+        p {
+            color: var(--darkGray);
+
+        }
+    }
+
+    .ant-collapse-content-box {
+        padding-top: 0 !important;
+        padding-bottom: 12px !important;
+    }
+
+    .ant-collapse-header {
+
+        background: #fff;
+        height: 78px;
+        align-items: center !important;
+        border-radius: 10px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    section.faq {
+        .ant-collapse-item{
+            padding: 10px 0;
+        }
+        .ant-collapse-header-text {
+            font-size: 16px;
+
+        }
+
+        .ant-collapse-content {
+            p {
+                font-size: 14px;
+
+            }
+        }
+
+        .ant-collapse-arrow {
+            svg {
+                
+                width: 8px !important;
+                height: 8px !important;
+            }
+        }
+        .ant-collapse-item-active {
+            .ant-collapse-arrow {
+                svg {
+                 
+                    width: 8px !important;
+                    height: 8px !important;
+                }
+            }
+        }
+    }
+}

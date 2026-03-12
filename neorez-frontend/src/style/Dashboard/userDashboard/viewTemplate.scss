@@ -1,0 +1,16 @@
+.viewTemplate {
+    background-color: var(--primary);
+    border-radius: 8px;
+    width: 42px;
+    position: fixed;
+    right: 3%;
+
+    .hamburger-react {
+        color: white;
+        margin: auto;
+
+        div {
+            width: 25px !important;
+        }
+    }
+}

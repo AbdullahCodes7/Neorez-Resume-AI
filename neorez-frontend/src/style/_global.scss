@@ -1,0 +1,440 @@
+// flat icons
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css");
+// *{
+//     outline:2px solid black!important;
+// }
+.phone-wrap {
+  p {
+    text-wrap: auto !important;
+  }
+}
+.page-dom {
+  width: calc(100% - 320px);
+}
+
+@media screen and (max-width: 1280px) {
+  .page-dom {
+    width: 100%;
+  }
+}
+
+@media print {
+  .resume-section {
+    page-break-inside: avoid;
+  }
+  .resume-section-break {
+    page-break-before: always;
+  }
+}
+
+.resume-container {
+  display: block;
+  min-height: 100vh;
+}
+
+// .date-picker-bushra .ant-picker-panel-container{
+//   background: red;
+// }
+
+// #cover-letter-container {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background: white; /* Ensure no black borders */
+// }
+
+.resume-date-picker .ant-picker-input > input {
+  font-size: 10px;
+  font-weight: 500;
+  height: 30px;
+  min-width: max-content;
+}
+
+.resumeanalysechart {
+  border-radius: 20px;
+}
+
+.ant-progress-circle-path {
+  // stroke: red !important;
+  stroke-linecap: round;
+}
+
+.ant-progress-circle {
+  filter: drop-shadow(2px 4px 8px rgba(16, 142, 233, 0.6)) !important;
+}
+
+/* General styles for resume container */
+// .resume-container {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   max-width: 800px;
+//   margin: 0 auto;
+//   padding-top: 0;
+// }
+
+// .leftContent,
+// .rightContent {
+//   width: 48%; /* Adjust the width to ensure sections fit */
+//   margin-right: 2%; /* To give space between the columns */
+// }
+// .resume-section {
+//   break-inside: avoid;
+//   page-break-inside: avoid;
+// }
+/* Prevent page breaks within the sections themselves */
+// .resume-section {
+//   page-break-inside: avoid;
+//   // margin-bottom: 10px;
+// }
+
+// /* Force page breaks between sections */
+// .resume-section-break {
+//   page-break-after: always;
+// }
+
+/* If an item overflows, force a page break after it */
+.experience-item {
+  page-break-inside: avoid;
+  margin-bottom: 5px;
+}
+
+.custom-placeholder {
+  .ant-picker-input input::placeholder {
+    color: black !important; // Default color
+    opacity: 1; // Ensure visibility
+
+    &.text-color-custom {
+      color: var(--dynamic-placeholder-color) !important;
+    }
+  }
+}
+
+.customstyle {
+}
+
+.custom-quill .ql-editor {
+  font-family: inherit !important;
+  color: inherit !important;
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  min-height: 30px;
+}
+
+.custom-quill .ql-container {
+  border: none !important;
+  padding: 0 !important;
+  outline: none !important;
+}
+
+.cvBody-details {
+  &.text-Roboto {
+    p {
+      font-family: "Roboto", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Roboto", sans-serif !important;
+    }
+  }
+  &.text-Inter {
+    p {
+      font-family: "Inter", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+  &.text-Poppins {
+    p {
+      font-family: "Poppins", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Poppins", sans-serif !important;
+    }
+  }
+  &.text-Georgia {
+    p {
+      font-family: "Georgia", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Georgia", sans-serif !important;
+    }
+  }
+  &.text-Montserrat {
+    p {
+      font-family: "Montserrat", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Montserrat", sans-serif !important;
+    }
+  }
+  &.text-Lato {
+    p {
+      font-family: "Lato", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Lato", sans-serif !important;
+    }
+  }
+  &.text-Arial {
+    p {
+      font-family: "Arial", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Arial", sans-serif !important;
+    }
+  }
+  &.text-Rubik {
+    p {
+      font-family: "Rubik", sans-serif !important;
+    }
+    ul > li {
+      font-family: "Rubik", sans-serif !important;
+    }
+  }
+
+  &.text-12px {
+    p {
+      font-size: 12px !important;
+    }
+    ul > li {
+      font-size: 12px !important;
+    }
+  }
+  &.text-16px {
+    p {
+      font-size: 16px !important;
+    }
+    ul > li {
+      font-size: 16px !important;
+    }
+  }
+  &.text-20px {
+    p {
+      font-size: 20px !important;
+    }
+    ul > li {
+      font-size: 20px !important;
+    }
+  }
+  &.text-24px {
+    p {
+      font-size: 24px !important;
+    }
+    ul > li {
+      font-size: 24px !important;
+    }
+  }
+
+  &.text-color-white {
+    p {
+      color: white !important;
+    }
+    li {
+      color: white !important;
+    }
+  }
+  &.text-color-black {
+    p {
+      color: black !important;
+    }
+    h2 {
+      color: #003953;
+    }
+  }
+}
+.coverLetter-Details {
+  &.coverLettertext-Roboto {
+    p {
+      font-family: "Roboto", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Inter {
+    p {
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Poppins {
+    p {
+      font-family: "Poppins", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Georgia {
+    p {
+      font-family: "Georgia", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Rubik {
+    p {
+      font-family: "Rubik", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Montserrat {
+    p {
+      font-family: "Montserrat", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Arial {
+    p {
+      font-family: "Arial", sans-serif !important;
+    }
+  }
+  &.coverLettertext-Lato {
+    p {
+      font-family: "Lato", sans-serif !important;
+    }
+  }
+
+  &.coverLettertext-12px {
+    p {
+      font-size: 12px !important;
+    }
+  }
+  &.coverLettertext-16px {
+    p {
+      font-size: 16px !important;
+    }
+  }
+  &.coverLettertext-20px {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  &.coverLettertext-24px {
+    p {
+      font-size: 24px !important;
+    }
+  }
+}
+
+.white-spinner .ant-spin-dot i {
+  background-color: white !important;
+}
+
+//QL EDITOR
+.ql-editor {
+  padding: 0px;
+  // z-index: 1000;
+}
+
+.ql-tooltip-arrow {
+  border-bottom: 6px solid white !important;
+}
+
+.ql-toolbar {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 2px 8.2px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  width: 108px;
+  color: #1788df;
+  position: relative;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.ql-formats button {
+  box-shadow: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.17) !important;
+  }
+}
+
+.ql-bubble .ql-stroke {
+  stroke: #0087ed !important;
+}
+
+.ql-active .ql-stroke {
+  stroke: #0087ed !important;
+  // background-color: #000000;
+}
+
+.ql-stroke:hover {
+  stroke: #0087ed !important;
+}
+
+.ql-editor.ql-blank::before {
+  left: 0px;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  // top: 0px;
+  font-size: 12px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+// .project {
+//   .ql-editor ul > li::before {
+//     display: none !important;
+//   }
+// }
+
+// .description-wrap ul > li {
+//   margin-left: -20px;
+// }
+
+// .description-wrap ul {
+//   margin-left: -20px;
+// }
+
+.description-wrap {
+  .ql-editor,
+  .description {
+    margin-left: 0px !important;
+  }
+}
+.project_description {
+  .ql-editor,
+  .description {
+    color: #000;
+    margin-left: 0px !important;
+  }
+}
+.ql-editor ol,
+.ql-editor ul {
+  padding-left: 0px !important;
+}
+// .project_description .proj_description .ql-editor ol,
+// .ql-editor ul {
+//   padding-left: 0px !important;
+// }
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-page {
+  width: 100%;
+  min-height: 900px; /* Adjust page height as needed */
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.resume-section {
+  // margin-bottom: 15px;
+  break-inside: avoid; /* Prevent breaking inside sections */
+}
+
+.resume-section h2,
+.resume-section h3 {
+  page-break-after: avoid; /* Ensure heading does not appear alone */
+  break-before: auto; /* Allow section content to continue on the next page */
+}
+
+@media print {
+  .resume-page {
+    page-break-after: always;
+  }
+
+  .resume-section {
+    page-break-inside: avoid;
+  }
+}

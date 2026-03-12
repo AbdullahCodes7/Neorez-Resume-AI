@@ -1,0 +1,13 @@
+.singleBlog-sec {
+  padding: 42px 55px 55px 55px;
+}
+@media screen and (max-width: 1024px) {
+  .singleBlog-sec {
+    padding: 60px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .singleBlog-sec {
+    padding: 30px 10px;
+  }
+}

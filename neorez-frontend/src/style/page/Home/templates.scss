@@ -1,0 +1,50 @@
+.templateWrapper {
+  .resumeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 26px;
+    width: 100%;
+
+    .cvv {
+      width: 324px;
+      height: 425px;
+      object-fit: cover;
+      margin-right: 20px;
+      //  border: 1px solid red;
+
+
+    }
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .templateWrapper {
+    .resumeContainer {
+      .cvv {
+
+        padding: 10px;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width:768px) {
+  .templateWrapper {
+    .resumeContainer {
+
+      gap: 0px;
+
+      .cvv {
+        // height: 10%;
+        margin-right: 0px;
+        //  border: 1px solid red;
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.register {
+  background: url("/src/assets/images/blueBg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  .formWrap {
+    background: linear-gradient(106deg, #c8e7ff 0%, #c9e8ff 100%);
+    .iconContainer {
+      border: 1px solid rgba(42, 157, 244, 0.4);
+      border-radius: 8.934px;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+}

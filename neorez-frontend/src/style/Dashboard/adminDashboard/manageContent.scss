@@ -1,0 +1,261 @@
+//Main content
+.contentWrap {
+    .manageContent {
+        border: 1px solid var(--primary);
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+            border: none;
+        }
+    }
+}
+
+//Update Script
+.updateScript {
+    .script {
+        border-radius: 9.977px;
+        background: var(--White, #FFF);
+        padding: 12px 28.684px;
+
+        .textarea-box .input-wrapper {
+
+            padding: 0px 0px 0px 10px;
+
+            textarea {
+                color: var(--Grey, #676767);
+                font-feature-settings: 'ss01' on, 'cv01' on, 'cv11' on;
+                // font-family: "Carmen Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29.931px;
+
+            }
+
+            textarea:disabled {
+                color: var(--Grey, #676767);
+                opacity: 0.5;
+                background-color: white;
+            }
+        }
+    }
+
+    .sliderUpdate {
+        .ant-slider {
+            .ant-slider-track {
+                height: 7px;
+                border-radius: 75px !important;
+                background: var(--Primary, #2A9DF4) !important;
+
+                &:hover {
+                    background-color: var(--darkBlue) !important;
+                }
+
+            }
+
+            .ant-slider-rail {
+
+                background-color: var(--primary) !important;
+                opacity: 0.5;
+            }
+
+            .ant-slider-horizontal .ant-slider-rail {
+                width: 100%;
+                height: 7px;
+
+            }
+
+            .ant-slider-handle::after {
+                inset-inline-start: -2px;
+                inset-block-start: -2px;
+                width: 17px;
+                height: 17px;
+                background-color: var(--primary);
+                box-shadow: 0 0 0 3px var(--darkBlue);
+            }
+        }
+
+
+        .ant-select-single {
+            height: 55px;
+
+        }
+
+        .ant-select-selector {
+            border-radius: 9.977px !important;
+            border: 1px solid var(--Light-Grey, #F6F6F6) !important;
+            padding: 0px 28px;
+            background: var(--Light-Grey, #F6F6F6) !important;
+        }
+
+    }
+}
+
+//Update Logo and navbar
+.updateLogo {
+    .updateBox {
+        border-radius: 10px;
+        border: 1px solid rgba(103, 103, 103, 0.30);
+        background: #FFF;
+        // padding: 8px;
+
+        .logoBox {
+            border-radius: 10px;
+            border: 1px dashed rgba(103, 103, 103, 0.30);
+            background: #FFF;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .updateNavlist {
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+            color: var(--darkBlack);
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 15.633px;
+            padding: 8px;
+            text-wrap: nowrap;
+
+        }
+    }
+}
+
+.adminpricing {
+
+    .ant-select-single {
+        height: 55px;
+    }
+
+    .ant-select-selector {
+        border-radius: 9.977px !important;
+        border: #F6F6F6 !important;
+        padding: 0px 28px;
+        color: var(--darkGray);
+        font-family: "Open Sans" !important;
+        background: #F6F6F6 !important;
+
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+
+        label {
+            color: var(--Dark, #2B2B2B);
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+        }
+
+        .input-wrapper {
+            border-radius: 9.977px;
+            background: var(--Grey, #F6F6F6);
+            height: 55px;
+            border: 1px solid #F6F6F6;
+
+            &:focus-within {
+                border: 1px solid var(--primary);
+            }
+
+            input {
+                background: var(--Grey, #F6F6F6);
+
+                padding: 10px 0;
+                color: var(--darkGray);
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-right: 25px;
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+
+
+                &::placeholder {
+                    color: var(--Dark, #2B2B2B);
+                    font-feature-settings: 'ss01' on, 'cv01' on, 'cv11' on;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 29.931px;
+                    /* 187.067% */
+
+                }
+
+
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+    .textarea-box {
+        gap: 2px;
+
+        label {
+            color: var(--Dark, #2B2B2B);
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .input-wrapper {
+            border-radius: 9.977px;
+            background: var(--Grey, #F6F6F6);
+            border: 1px solid var(--Grey, #F6F6F6);
+
+
+            textarea {
+                background: var(--Grey, #F6F6F6);
+                padding: 15px 12px 15px 28.684px;
+
+            }
+        }
+    }
+}
+
+//select dropdown for update pricing page and al prompt page
+.update-dropdown {
+    box-shadow: none !important;
+    background: var(--Light-Grey, #F6F6F6) !important;
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        color: rgba(0, 0, 0, 0.88);
+        font-weight: 600;
+        background-color: #F6F6F6;
+    }
+
+    .ant-select-item {
+        display: flex !important;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) !important;
+        height: 50px;
+        margin-bottom: 10px !important;
+        color: #676767 !important;
+        font-family: 'Carmen Sans', sans-serif !important;
+        font-size: 16px !important;
+    }
+}

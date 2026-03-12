@@ -1,0 +1,335 @@
+.resumeWrap2 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .borderClick {
+    border: 1px solid gray;
+  }
+  .ql-editor.ql-blank::before {
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-size: 12px !important;
+    letter-spacing: 0px !important;
+    font-style: italic !important;
+    left: 0px;
+    font-weight: 400 !important;
+    text-wrap: nowrap !important;
+  }
+
+  .ql-container {
+    box-sizing: border-box;
+    font-family: Cabin;
+  }
+
+  .ql-toolbar {
+    width: max-content;
+    color: #288ddb;
+  }
+
+  .ql-editor {
+    padding: 0px;
+  }
+
+  // All section headings and icons
+  .sections-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    h2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    svg {
+      display: block;
+      color: black;
+    }
+  }
+
+  .resume-profile {
+    display: flex;
+    padding: 12px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .image {
+      display: none;
+    }
+
+    .name-wrap {
+      .ql-editor,
+      .name {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 8px;
+      }
+    }
+
+    .designation-wrap {
+      .ql-editor,
+      .designation {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  //SECTIONS
+
+  .resume-about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .ql-editor,
+    .about-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 13px;
+      /* 108.333% */
+    }
+  }
+
+  .resume-work {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .job {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .company {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .location {
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    // .date {
+    //     font-size: 10px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: normal;
+    // }
+    .datepicker {
+      .ant-picker-outlined {
+        background: transparent !important;
+        border-color: transparent;
+      }
+
+      .ant-picker-range .ant-picker-active-bar {
+        display: none;
+      }
+    }
+
+    .description {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      /* 133.333% */
+    }
+  }
+
+  .resume-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ql-editor,
+    .contact-details {
+      text-align: right;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-education {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .education-content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .degree {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+
+      .college {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+
+      .date {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .resume-certification {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      color: #000;
+      font-family: Hubot-Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .date {
+      color: #2e324b;
+      font-family: Hubot-Sans;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .skill-content {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .resume-language2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .language-name {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .ant-progress .ant-progress-bg {
+      border-radius: 50px;
+      opacity: 0.5;
+    }
+  }
+
+  .resume-language {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .language-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .language-name {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume-reference {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .reference-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .refernt-name {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .refernt-institute {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .refernt-phone {
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .refernt-email {
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .info-heading {
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

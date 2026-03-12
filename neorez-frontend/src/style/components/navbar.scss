@@ -1,0 +1,134 @@
+.navWrapper {
+  // margin-top: 10px;
+  position: fixed;
+  top: 20px;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  .container {
+    .navItems {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+      padding: 18px 23px;
+
+      .navbarList {
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navWrapper {
+    display: none;
+
+    li {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: black;
+      list-style: none;
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .mobile-navbar {
+    width: 100%;
+    height: 68px;
+    //background: #6d43ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+
+    .mobileLogo {
+      width: 100px;
+      height: 25px;
+    }
+
+    .menu-btn {
+      box-shadow: none;
+      background: transparent;
+      border: none;
+      width: 56px;
+      height: 39px;
+      // margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .offcanvas {
+    width: 100% !important;
+  }
+
+  .offcanvas-header {
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .offcanvas-body {
+    // background: #3F60DD;
+    color: var(--white);
+    background: white;
+    width: 100% !important;
+  }
+
+  .Offcanvas.Title {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .blue-button {
+    border: 2.3px solid #fff !important;
+
+    &:hover {
+      background-image: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+      border: none !important;
+    }
+  }
+
+  .logostyle {
+    width: 100px;
+    height: 25px;
+  }
+}
+
+.offcanvas-header .btn-close {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navWrapper .container .navItems {
+    padding: 18px 10px;
+  }
+
+  .navbarList .para-small {
+    font-size: 12px;
+  }
+}
+
+.ant-drawer-content-wrapper {
+  width: 250px !important;
+}

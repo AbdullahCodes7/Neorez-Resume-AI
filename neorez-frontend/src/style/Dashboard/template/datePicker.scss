@@ -1,0 +1,104 @@
+.resume-date-picker {
+  width: 50px;
+  background: transparent;
+  border-color: transparent;
+  padding: 0px;
+
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &:focus-within {
+    background-color: transparent !important;
+    background: transparent;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  .ant-picker-input > input {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .anticon svg {
+    display: none;
+  }
+
+  .ant-picker-range-separator {
+    padding: 0px;
+  }
+
+  .ant-picker-ranges {
+    display: none !important;
+  }
+}
+
+.date-picker-calender {
+  .ant-picker-header button {
+    box-shadow: none !important;
+  }
+
+  .ant-picker-cell .ant-picker-cell-inner {
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+
+  .ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color: var(--primary) !important;
+  }
+
+  .ant-picker-footer-extra {
+    padding: 0px !important;
+
+    button {
+      border-radius: 0px !important;
+    }
+  }
+
+  .ant-picker-header {
+    background-color: var(--primary);
+    color: white !important;
+  }
+
+  .ant-picker-header-super-prev-btn,
+  .ant-picker-header-super-next-btn {
+    color: white !important;
+  }
+}
+
+.ant-picker-header button {
+  box-shadow: none !important;
+}
+
+.ant-picker-cell .ant-picker-cell-inner {
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: var(--primary) !important;
+}
+
+.ant-picker-footer-extra {
+  padding: 0px !important;
+
+  button {
+    border-radius: 0px !important;
+  }
+}
+
+.ant-picker-header {
+  background-color: var(--primary);
+  color: white !important;
+}
+
+.ant-picker-header-super-prev-btn,
+.ant-picker-header-super-next-btn {
+  color: white !important;
+}

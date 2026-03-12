@@ -1,0 +1,98 @@
+.swal2-modal {
+
+  // Buttons
+  .swal2-actions {
+    button {
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    .swal2-confirm {
+      background: #000 !important;
+      border: 1px solid #000;
+    }
+
+    .swal2-cancel {
+      background: transparent !important;
+      border: 1px solid #000;
+      color: #000;
+    }
+  }
+
+  //   title
+  .swal2-title {
+    font-family: Inter !important;
+    font-size: 22px;
+    color: var(--primary);
+  }
+
+  .swal2-info {
+
+    border-color: var(--primary) !important;
+
+  }
+
+  .swal2-icon-show {
+    .swal2-icon-content {
+      color: var(--primary) !important;
+    }
+
+    &.swal2-warning {
+      border-color: #000 !important;
+    }
+
+    .swal2-success-ring {
+      border-color: #000 !important;
+    }
+
+    .swal2-success-line-long,
+    .swal2-success-line-tip {
+      border-color: #000 !important;
+      background: #000 !important;
+    }
+  }
+}
+
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+
+  input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #373737;
+    --b1: 100% 0 0;
+
+    &:checked,
+    &[aria-checked="true"] {
+      background-color: #373737;
+      animation: radiomark-27 var(--animation-input, 0.2s) ease-out;
+      box-shadow: 0 0 0 4px oklch(var(--b1) / 1) inset,
+        0 0 0 4px oklch(var(--b1) / 1) inset;
+    }
+  }
+}
+
+@keyframes radiomark-27 {
+  0% {
+    box-shadow: 0 0 0 12px oklch(var(--b1) / 1) inset,
+      0 0 0 12px oklch(var(--b1) / 1) inset;
+  }
+
+  50% {
+    box-shadow: 0 0 0 3px oklch(var(--b1) / 1) inset,
+      0 0 0 3px oklch(var(--b1) / 1) inset;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px oklch(var(--b1) / 1) inset,
+      0 0 0 4px oklch(var(--b1) / 1) inset;
+  }
+}

@@ -1,0 +1,29 @@
+# Base image
+FROM node:21-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --production
+RUN npm i nodemon
+  
+# Copy the rest of the application
+COPY . .
+
+# Set environment variable
+ENV PORT=5001
+
+
+# Expose port (change if your app uses a different port)
+
+EXPOSE 5000
+
+EXPOSE 5001
+
+
+# Start the application
+CMD ["sh", "-c", "PORT=$PORT npm run dev"]
