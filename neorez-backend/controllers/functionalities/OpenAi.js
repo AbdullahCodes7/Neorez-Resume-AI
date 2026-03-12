@@ -444,7 +444,7 @@ exports.generateResumeScore = async function (data, prompt) {
 
     // Create the completion with streaming enabled
     const stream = await openaiInstance.chat.completions.create({
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-4o-mini',
       temperature: 0.7, // Dynamically pass temperature
       response_format: { type: "json_object" },
       messages: [
