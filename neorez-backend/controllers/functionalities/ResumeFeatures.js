@@ -2,7 +2,7 @@ const ResumeModel = require("../../models/UserResume");
 const resumeGeneration = require("./OpenAi");
 const pdfResumeGeneration = require("./OpenAiPdf");
 // const fixNewGenerateChat = require("./functionalities/fixNew")
-// const stripe = require("stripe")("")
+// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 // const { db } = require("../config");
 
 const { generatePdfResumeWithDescription } = require("./OpenAi")
