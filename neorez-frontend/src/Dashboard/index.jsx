@@ -568,10 +568,10 @@ const Index = () => {
 
   const handleResumeModal = () => {
     const userData = JSON.parse(localStorage.getItem("user"));
-    if (userData?.data?.subscriptionStatus === "inactive") {
-      message.warning("Please Purchase A Subscription Plan to Create A Resume");
-      return;
-    }
+    // if (userData?.data?.subscriptionStatus === "inactive") {
+    //   message.warning("Please Purchase A Subscription Plan to Create A Resume");
+    //   return;
+    // }
     setIsResumeModalOpen(!isResumeModalOpen);
   };
 

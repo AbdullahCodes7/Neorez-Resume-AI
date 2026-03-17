@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema({
     subscriptionStatus: {
         type: String,
         enum: ['inactive', 'Weekly Plan', 'Monthly Plan', 'Annual Plan'],
-        default: 'Monthly Plan'
+        default: 'Annual Plan'
     },
     subscription: [subscriptionSchema]
 }, { timestamps: true })
