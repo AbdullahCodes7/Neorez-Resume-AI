@@ -233,19 +233,19 @@ const AppLayout = () => {
   const ApiUrl = import.meta.env.VITE_APP_BACKEND_API;
 
   const handleGetUserInfo = async () => {
-    if (userId) {
-      try {
-        const response = await axios.get(`${ApiUrl}/userInfo/${userId}`);
-        // console.log("response.data", response?.data);
-        dispatch(setUserInfo(response?.data));
-      } catch (err) {
-        console.log("error", err);
-      }
-    }s
+      // Commented out: Using /user/:id instead of /userInfo/:id
+    // if (userId) {
+    //   try {
+    //     const response = await axios.get(`${ApiUrl}/userInfo/${userId}`);
+    //     dispatch(setUserInfo(response?.data));
+    //   } catch (err) {
+    //     console.log("error", err);
+    //   }
+    // }
   };
 
   useEffect(() => {
-    handleGetUserInfo();
+    // handleGetUserInfo();
   }, []);
 
   return (

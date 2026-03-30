@@ -15,9 +15,9 @@ const General = () => {
   const dispatch = useDispatch();
   const ApiUrl = import.meta.env.VITE_APP_BACKEND_API;
   const [updateUser, setUpdateUser] = useState({
-    name: "",
+    name: user?.data?.name || "",
     email: user?.data?.email || "",
-    image: "",
+    image: user?.data?.image || "",
   });
 
   const handleFileUpload = (event) => {
@@ -60,6 +60,13 @@ const General = () => {
       );
       if (response.data.success) {
         toast.success(response?.data?.message);
+        // Update the image in the state if a new image URL is returned
+        if (response.data.image) {
+          setUpdateUser((prev) => ({
+            ...prev,
+            image: response.data.image,
+          }));
+        }
       }
     } catch (error) {
       console.error(error);
@@ -67,22 +74,27 @@ const General = () => {
   };
 
   const handleGetUserData = async () => {
+    const userId = user?.data?._id;
+    if (!userId) return;
     try {
-      const response = await axios.get(`${ApiUrl}/user/${user?.data?._id}`);
-      // console.log("response: ", response.data);
+      const response = await axios.get(`${ApiUrl}/user/${userId}`);
+      console.log("User data fetched:", response.data);
       if (response.data) {
-        setUpdateUser(response.data);
+        setUpdateUser({
+          name: response.data.name || "",
+          email: response.data.email || "",
+          image: response.data.image || "",
+        });
         dispatch(updateField("name", response.data.name));
-        // toast.success(response?.data?.message);
       }
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching user data:", error);
     }
   };
 
   useEffect(() => {
     handleGetUserData();
-  }, []);
+  }, [user?.data?._id, ApiUrl]);
   return (
     <>
       <div>
@@ -104,9 +116,15 @@ const General = () => {
                 htmlFor="profilePicture"
               >
                 <img
-                  src={updateUser.image ? updateUser.image : dp}
+                  key={updateUser.image}
+                  src={updateUser.image || dp}
                   alt="profile"
                   className="w-32 h-32 object-cover rounded-full"
+                  onError={(e) => {
+                    console.error("Image failed to load:", e);
+                    e.target.src = dp;
+                  }}
+                  onLoad={() => console.log("Image loaded successfully")}
                 />
                 Upload image
               </label>

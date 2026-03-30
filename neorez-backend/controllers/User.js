@@ -604,26 +604,22 @@ async function updateUser(req, res) {
             return res.status(404).json({ message: "User not found", success: false });
         }
 
+
         // Check if the incoming image is in base64 format
         if (image && image.startsWith('data:')) {
-            // If an old image exists, delete it from S3
-            if (user.image && user.image.startsWith('https://')) {
-                const deleteResult = await deleteFileFromAWS(user.image);
-                if (!deleteResult.success) {
-                    return res.status(500).json({
-                        message: 'Failed to delete old image',
-                        error: true,
-                        success: false
-                    });
+            // If an old image exists, delete it from AWS
+            if (user.image && typeof user.image === 'string' && user.image.startsWith('https://')) {
+                try {
+                    await deleteFileFromAWS(user.image);
+                } catch (err) {
+                    console.error('Error deleting old image from AWS:', err);
                 }
             }
-
             // Extract MIME type and base64 data from the new image
             const mimeType = image.match(/data:(.*?);base64,/)[1];
             const base64ImageData = image.replace(/^data:.*;base64,/, '');
             const buffer = Buffer.from(base64ImageData, 'base64');
             const fileName = `${name}.${mimeType.split('/')[1]}`;
-
             // Upload the new image to AWS S3
             const uploadResult = await uploadFileToAWS(buffer, fileName, "image", mimeType);
             if (!uploadResult.success) {
@@ -633,7 +629,6 @@ async function updateUser(req, res) {
                     success: false
                 });
             }
-
             imageUrl = uploadResult.file_url;  // New image URL from S3
         }
 
@@ -646,7 +641,13 @@ async function updateUser(req, res) {
 
         await user.save();
 
-        return res.status(200).json({ message: "User Details updated successfully", user, success: true });
+        // Always return the latest image URL in the response
+        return res.status(200).json({
+            message: "User Details updated successfully",
+            user,
+            image: user.image,
+            success: true
+        });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Internal server error", success: false });

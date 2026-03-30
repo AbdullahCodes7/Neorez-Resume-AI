@@ -152,7 +152,7 @@ const Pricingcard = ({ isAdminPage }) => {
           : null;
 
         const result = await axios.get(
-          `${ApiUrl}/userInfo/get-user/${userData.data._id}`
+          `${ApiUrl}/user/${userData.data._id}`
         );
         console.log(result)
         if (result.status) {

@@ -147,7 +147,7 @@ const AddSectionCoverletter = ({
             </p>
             <div className="flex flex-wrap justify-center gap-4 items-center">
               {addSection.map((add, index) => (
-                <>
+                <div key={index}>
                   {/* {console.log(add)} */}
                   <div className="flex flex-col gap-2 w-[359px] addSection">
                     <div className="relative group overflow-hidden rounded-md">
@@ -171,7 +171,7 @@ const AddSectionCoverletter = ({
                       {add.footer}
                     </p>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>

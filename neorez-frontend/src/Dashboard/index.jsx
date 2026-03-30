@@ -105,7 +105,7 @@ const Index = () => {
 
   const handleGetUserInfo = async () => {
     try {
-      const response = await axios.get(`${apiUrl}/userInfo/${userId}`);
+      const response = await axios.get(`${apiUrl}/user/${userId}`);
       // console.log("response.data", response.data);
       dispatch(setUserInfo(response.data));
     } catch (err) {
@@ -970,7 +970,7 @@ const Index = () => {
   // Fetch resumes to check the limit
   const handleGetResumes = async () => {
     try {
-      const response = await axios.get(`${ApiUrl}/resume/resumes/${userId}`);
+      const response = await axios.get(`${ApiUrl}/resume/draft/${userId}`);
       const resumeData = response.data;
 
       if (resumeData && resumeData.length > 0) {
@@ -1083,7 +1083,7 @@ const fetchCheckoutSession = async (checkoutid) => {
         : null;
 
       const result = await axios.get(
-        `${ApiUrl}/userInfo/get-user/${userData.data._id}`
+        `${ApiUrl}/user/${userData.data._id}`
       );
       console.log(result); // To check the updated data
       if (result.status) {

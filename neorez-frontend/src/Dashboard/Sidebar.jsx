@@ -369,7 +369,7 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                   </div>
                   <ul className="flex flex-col gap-4">
                     {menuItems.map((item, index) => (
-                      <>
+                      <div key={index}>
                         <li>
                           <div className=" ">
                             <a
@@ -427,7 +427,7 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                             </a>
                           </div>
                         </li>
-                      </>
+                      </div>
                     ))}
                   </ul>
                 </div>
@@ -440,9 +440,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                   </div>
                   <ul className="flex flex-col gap-4">
                     {isAdmin == "Admin"
-                      ? adminSidebarItems.map((item) =>
+                      ? adminSidebarItems.map((item, idx) =>
                           item.label !== "Settings" ? (
-                            <>
+                            <div key={idx}>
                               <li>
                                 <NavLink
                                   to={item?.link}
@@ -452,9 +452,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                   {item?.label}
                                 </NavLink>
                               </li>
-                            </>
+                            </div>
                           ) : (
-                            <>
+                            <div key={idx}>
                               <li className="relative">
                                 <NavLink
                                   to={item?.link}
@@ -487,12 +487,12 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                   </ul>
                                 )}
                               </li>
-                            </>
+                            </div>
                           )
                         )
-                      : sidebarItems.map((item) =>
+                      : sidebarItems.map((item, idx) =>
                           item.label !== "Settings" ? (
-                            <>
+                            <div key={idx}>
                               <li>
                                 <NavLink
                                   to={item?.link}
@@ -502,9 +502,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                   {item?.label}
                                 </NavLink>
                               </li>
-                            </>
+                            </div>
                           ) : (
-                            <>
+                            <div key={idx}>
                               <li className="relative">
                                 <NavLink
                                   to={item?.link}
@@ -537,7 +537,7 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                   </ul>
                                 )}
                               </li>
-                            </>
+                            </div>
                           )
                         )}
                   </ul>
@@ -600,15 +600,15 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                       </div>
                     </div>
                     <ul className="flex flex-col gap-4">
-                      {menuItems.map((item) => (
-                        <>
+                      {menuItems.map((item, idx) => (
+                        <div key={idx}>
                           <li>
                             <a className="cursor-pointer" onClick={item?.link}>
                               <img src={item?.icon} alt="icons" />
                               {item?.label}
                             </a>
                           </li>
-                        </>
+                        </div>
                       ))}
                     </ul>
                   </div>
@@ -619,9 +619,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                     </div>
                     <ul className="flex flex-col gap-4">
                       {isAdmin == "Admin"
-                        ? adminSidebarItems.map((item) =>
+                        ? adminSidebarItems.map((item, idx) =>
                             item.label !== "Settings" ? (
-                              <>
+                              <div key={idx}>
                                 <li>
                                   <NavLink
                                     to={item?.link}
@@ -631,9 +631,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                     {item?.label}
                                   </NavLink>
                                 </li>
-                              </>
+                              </div>
                             ) : (
-                              <>
+                              <div key={idx}>
                                 <li className="relative">
                                   <NavLink
                                     to={item?.link}
@@ -666,12 +666,12 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                     </ul>
                                   )}
                                 </li>
-                              </>
+                              </div>
                             )
                           )
-                        : sidebarItems.map((item) =>
+                        : sidebarItems.map((item, idx) =>
                             item.label !== "Settings" ? (
-                              <>
+                              <div key={idx}>
                                 <li>
                                   <NavLink
                                     to={item?.link}
@@ -681,9 +681,9 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                     {item?.label}
                                   </NavLink>
                                 </li>
-                              </>
+                              </div>
                             ) : (
-                              <>
+                              <div key={idx}>
                                 <li className="relative">
                                   <NavLink
                                     to={item?.link}
@@ -716,7 +716,7 @@ const Sidebar = ({ setActiveTab, activeTab, resumeRef, coverLetterRef }) => {
                                     </ul>
                                   )}
                                 </li>
-                              </>
+                              </div>
                             )
                           )}
                     </ul>
