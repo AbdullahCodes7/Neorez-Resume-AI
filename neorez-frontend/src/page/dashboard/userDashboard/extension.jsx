@@ -1300,12 +1300,7 @@ const Extension = () => {
               text="Download Extension"
               className="btn-primary py-[10px]"
               minHeight={50}
-              onClick={() =>
-                window.open(
-                  "https://chromewebstore.google.com/detail/neorez-job-seeker/jhilcelofilciobfeidchjeagikdcddd?authuser=0&hl=en",
-                  "_blank"
-                )
-              }
+              onClick={handleExtensionModal}
             />
           </div>
 
@@ -1340,6 +1335,71 @@ const Extension = () => {
         </div>
       </div>
 
+      <Modal
+        open={isExtensionModal}
+        onCancel={handleExtensionModal}
+        footer={null}
+        centered
+        width="700px"
+      >
+        <div className="px-[30px] modal-wrap flex flex-col gap-[24px] py-[20px]">
+          <div>
+            <h2 className="font-bold darkGray font-OpenSan text-xl mb-4">
+              How to Install the Extension Locally
+            </h2>
+          </div>
+          
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-3">
+              <span className="font-bold text-blue-600 min-w-[30px]">1.</span>
+              <div>
+                <p className="font-semibold darkGray">Open Chrome Extensions Page</p>
+                <p className="text-gray-600 text-sm">Go to <code className="bg-gray-100 px-2 py-1 rounded">chrome://extensions</code> in your browser</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-3">
+              <span className="font-bold text-blue-600 min-w-[30px]">2.</span>
+              <div>
+                <p className="font-semibold darkGray">Enable Developer Mode</p>
+                <p className="text-gray-600 text-sm">Toggle the <strong>Developer mode</strong> switch in the top-right corner</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-3">
+              <span className="font-bold text-blue-600 min-w-[30px]">3.</span>
+              <div>
+                <p className="font-semibold darkGray">Load Unpacked Extension</p>
+                <p className="text-gray-600 text-sm">Click <strong>Load unpacked</strong> and select the <code className="bg-gray-100 px-2 py-1 rounded">neorez-extension</code> folder</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-3">
+              <span className="font-bold text-blue-600 min-w-[30px]">4.</span>
+              <div>
+                <p className="font-semibold darkGray">Extension is Ready</p>
+                <p className="text-gray-600 text-sm">The extension will now appear in your extensions list and work locally</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-3 mt-4">
+            <p className="text-sm text-gray-700">
+              <strong>Note:</strong> Make sure your backend and frontend servers are running on <code className="bg-white px-1 rounded">localhost:3000</code> and <code className="bg-white px-1 rounded">localhost:5174</code>
+            </p>
+          </div>
+
+          <div className="flex gap-3 justify-end mt-6">
+            <Button
+              text="Got it"
+              className="btn-primary py-2 px-6"
+              onClick={handleExtensionModal}
+            />
+          </div>
+        </div>
+      </Modal>
+
+      {/* Commented out old modal */}
       {/* <Modal
         open={isExtensionModal}
         onCancel={handleExtensionModal}

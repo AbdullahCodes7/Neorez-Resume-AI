@@ -20,9 +20,7 @@
   ],
   "host_permissions": [
     "http://localhost:5173/*",
-    "https://neorez-resume.vercel.app/*",
     "https://www.indeed.com/*",
-    "https://neorez.ai/*",
     "https://*.indeed.com/*"
   ],
   "background": {

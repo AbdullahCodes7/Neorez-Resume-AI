@@ -4,9 +4,9 @@ const jwt = require('jsonwebtoken');
 const MailService = require('@sendgrid/mail');
 const { default: mongoose } = require("mongoose");
 const { uploadFileToAWS, deleteFileFromAWS } = require("../utils/AWS");
-// console.log("Process",process.env.SANDGRID_SENDER_EMAIL)
+// console.log("Process",process.env.SENDGRID_SENDER_EMAIL)
 
-MailService.setApiKey(process.env.SANDGRID_KEY)
+MailService.setApiKey(process.env.SENDGRID_API_KEY)
 
 function createToken(user) {
     const payload = {
@@ -116,12 +116,12 @@ async function sendEmail(email, generatedOtp) {
     try {
 
         // console.log("email:", email);
-        console.log("process.env.SANDGRID_KEY:", process.env.SANDGRID_KEY);
+        console.log("process.env.SENDGRID_API_KEY:", process.env.SENDGRID_API_KEY);
         // console.log("generatedOtp", generatedOtp);
         // console.log(MailService)
         const msg = {
             to: email,
-            from: process.env.SANDGRID_SENDER_EMAIL,
+            from: process.env.SENDGRID_SENDER_EMAIL,
             subject: "One Time Password",
             html: ` <p>Hello Your One Time Security Code </p>
                 <p>OTP code is:</p>
@@ -145,7 +145,7 @@ async function sendEmail(email, generatedOtp) {
 //     try {
 //         const msg = {
 //             to: email,
-//             from: process.env.SANDGRID_SENDER_EMAIL, 
+//             from: process.env.SENDGRID_SENDER_EMAIL, 
 //             subject: "One Time Password",
 //             html: `<p>Hello, your One Time Security Code</p><p>OTP code is:</p><h3>${generatedOtp}</h3>`,
 //         };
@@ -328,11 +328,11 @@ async function userSignInController(req, res) {
 //         user.otpExpiresIn = otpExpiresIn;
 //         await user.save();
 //         // console.log(otp, otpExpires, email);
-//         console.log("SendGrid Key exists:", !!process.env.SANDGRID_KEY);
-//         console.log("Sender Email:", process.env.SANDGRID_SENDER_EMAIL);
+//         console.log("SendGrid Key exists:", !!process.env.SENDGRID_API_KEY);
+//         console.log("Sender Email:", process.env.SENDGRID_SENDER_EMAIL);
 //         const msg = {
 //             to: email,
-//             from: process.env.SANDGRID_SENDER_EMAIL,
+//             from: process.env.SENDGRID_SENDER_EMAIL,
 //             subject: "Test password",
 //             html: ` <p>Hello</p>
 //                 <p>OTP code is:</p>
@@ -385,12 +385,12 @@ async function forgetPassword(req, res) {
         await user.save();
         
         // Log environment variable status (for debugging)
-        console.log("SendGrid Key exists:", !!process.env.SANDGRID_KEY);
-        console.log("Sender Email:", process.env.SANDGRID_SENDER_EMAIL);
+        console.log("SendGrid Key exists:", !!process.env.SENDGRID_API_KEY);
+        console.log("Sender Email:", process.env.SENDGRID_SENDER_EMAIL);
 
         const msg = {
             to: email,
-            from: process.env.SANDGRID_SENDER_EMAIL,
+            from: process.env.SENDGRID_SENDER_EMAIL,
             subject: "Password Reset OTP",
             html: `<p>Hello,</p>
                 <p>Your password reset OTP code is:</p>

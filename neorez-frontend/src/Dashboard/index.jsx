@@ -583,7 +583,7 @@ const Index = () => {
 
   const handleCoverLetterModal = () => {
     const userData = JSON.parse(localStorage.getItem("user"));
-    if (userData?.data?.subscriptionStatus === "inactive") {
+    if (userData?.data?.subscriptionStatus === "active") {
       message.warning("Please Purchase A Subscription Plan to Create A Cover Letter");
       return;
     }
