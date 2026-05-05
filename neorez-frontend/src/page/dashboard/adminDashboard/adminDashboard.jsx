@@ -68,7 +68,7 @@ const AdminDashboard = () => {
         <div className="flex justify-center">
           <Button
             text="Remove"
-            className="bg-blue-500 hover:bg-blue-600 text-white h-[30px] py-2 px-4 para-ex-small"
+            className="bg-red-500 hover:bg-red-600 text-white h-[30px] py-2 px-4 para-ex-small"
             onClick={() => handleRemoveSub(record._id)}
           />
         </div>

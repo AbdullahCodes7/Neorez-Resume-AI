@@ -1273,7 +1273,7 @@ const fetchCheckoutSession = async (checkoutid) => {
               >
                 <img src={ai} alt="icon" />
                 <p className="text-center text-wrap sm:text-nowrap para-small darkGray font-OpenSan font-semibold">
-                  Generate with AI
+                  Generate
                 </p>
               </div>
             </div>
@@ -1414,7 +1414,7 @@ const fetchCheckoutSession = async (checkoutid) => {
           ) : (
             <div className="flex flex-col  gap-5 justify-center items-center w-[80%] m-auto">
               <Button
-                text="Generative with AI"
+                text="Generate"
                 className="darkGray w-full py-4  hover:bg-[#2A9DF4] hover:text-white"
                 onClick={() => handleCheckCOverLetterLimit(handleStartModal)}
               />
