@@ -1,21 +1,29 @@
-const express = require("express")
-const { userSignUpController, userSignInController, verifyOtpController, findOneUser, forgetPassword, resetPassword, updateUser, updatePassword, loginwithgoogle, regenerateOtp } = require("../controllers/User")
+const express = require("express");
 
-const app = express()
+const {
+  userSignUpController,
+  userSignInController,
+  verifyOtpController,
+  forgetPassword,
+  resetPassword,
+  updatePassword,
+  regenerateOtp,
+} = require("../controllers/User");
 
-const router = express.Router()
+const router = express.Router();
 
-router.post("/signup", userSignUpController)
-router.post("/signin", userSignInController)
-router.post("/verifyotp", verifyOtpController)
-router.get("/:id", findOneUser);
+router.post("/signup", userSignUpController);
+
+router.post("/signin", userSignInController);
+
+router.post("/verifyotp", verifyOtpController);
+
 router.post("/forget", forgetPassword);
-router.post("/", updatePassword);
-router.post("/resendotp", regenerateOtp);
+
 router.post("/reset-password", resetPassword);
-router.put("/update/:user_id", updateUser);
-router.post("/loginwithgoogle", loginwithgoogle);
 
+router.post("/change-password", updatePassword);
 
+router.post("/resendotp", regenerateOtp);
 
-module.exports = router
+module.exports = router;
